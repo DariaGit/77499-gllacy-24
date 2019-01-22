@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Попова Дарья](https://up.htmlacademy.ru/htmlcss/24/user/77499).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
 
 ---
 
