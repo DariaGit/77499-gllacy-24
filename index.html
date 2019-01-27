@@ -1,12 +1,117 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Магазин мороженого Глэйси</title>
+</head>
 
-  </body>
+<body>
+  <!--<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>-->
+
+  <header class="main-header">
+    <nav class="main-navigation">
+      <img class="main-header-logo.svg" src="img/index-logo.svg" width="64" height="153" alt="Логотип магазина мороженого Глэйси">
+      <ul class="site-navigation">
+        <li><a href="catalog.html">Каталог</a>
+          <ul class="main-catalog-submenu">
+            <li><a href="#"><b>Новинки</b></a></li>
+            <li><a href="catalog.html">Сливочное</a></li>
+            <li class="main-catalog-submenu-highlighted"><a href="#">Щербеты</a></li>
+            <li><a href="#">Фруктовый лед</a></li>
+            <li><a href="#">Мелорин</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">О Компании</a></li>
+      </ul>
+
+      <ul class="user-navigation">
+        <li class="site-search"><a href="#"></a></li>
+        <li class="login-link"></li>
+        <li class="basket-link"></li>
+        <li>
+          <p>С 10 до 20, ежедневно <br>
+            <a class="telephone" href="tel:+78124502525">8 812 450-25-25</a></p>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="visually-hidden">Магазин мороженого Глэйси</h1>
+    <!--Блок, который не размечается по заданию-->
+    <section class="main-features">
+      <h2 class="visually-hidden">Преимущества магазина</h2>
+      <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
+      <ul class="features-list">
+        <li class="feature-item">
+          <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
+            и проверенных временем технологий.</p>
+        </li>
+        <li class="feature-item">
+          <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
+            дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
+        </li>
+        <li class="feature-item">
+          <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
+            связывает долговременное сотрудничество.</p>
+        </li>
+        <li class="feature-item">
+          <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
+            мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        </li>
+      </ul>
+    </section>
+    <section class="main-new-in-blog">
+      <h2 class="visually-hidden">Новое в блоге</h2>
+      <p>Новое в нашем блоге</p>
+      <h3><a href="10-sposobov-servirovki-fruktovyh-shcherbetov-k-stolu.html">10 способов сервировки фруктовых щербетов
+          к столу</a></h3>
+    </section>
+    <section>
+      <h2 class="visually-hidden">Подписка на рассылку</h2>
+      <!-- Здесь будет форма -->
+    </section>
+    <!--Блок, который не размечается по заданию-->
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-social">
+      <ul>
+        <li><a class="social-button" href="#">Твиттер</a></li>
+        <li><a class="social-button" href="#">Инстаграм</a></li>
+        <li><a class="social-button" href="#">Фейсбук</a></li>
+        <li><a class="social-button" href="#">В Контакте</a></li>
+      </ul>
+      <div>
+        <div class="footer-menu">
+          <ul>
+            <li class="footer-menu-item"><a href="#">Для поставщиков</a></li>
+            <li class="footer-menu-item"><a href="#">О производстве</a></li>
+            <li class="footer-menu-item"><a href="#">Наши документы</a></li>
+            <li class="footer-menu-item"><a href="#">Экологические стандарты</a></li>
+          </ul>
+        </div>
+        <div class="footer-html-academy">
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="logo-htmlacademy.svg"></a>
+          <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
+        </div>
+  </footer>
+
+  <section class="modal modal-login">
+    <!-- Здесь будет форма -->
+  </section>
+
+  <section class="modal modal-search">
+    <!-- Здесь будет форма -->
+  </section>
+
+  <section class="modal modal-feadback">
+   <h2>Мы обязательно вам ответим!</h2>
+   <!-- Здесь будет форма -->
+   <span class="modal-close">x</span>
+  </section>
+
+</body>
 </html>
