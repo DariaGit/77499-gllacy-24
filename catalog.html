@@ -25,9 +25,51 @@
             </ul>
         </nav>
         <section class="user-navigation">
-            <a class="site-search" href="#"></a>
-            <p class="login-link">Вход</p>
-            <p class="basket-link">2 товара</p>
+            <!--<a class="site-search" href="#"></a>-->
+         <form action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+            <input type="search" name="site-search" placeholder="Что ищем?" id="search-field">
+          </form>
+            <!--<a class="login-link" href="#">Вход</a>-->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <button class="button-entrance-um" type="button" name="entrance-button"><img src="img/icons/entrance.svg" alt="Кнопка входа">Вход</button>
+       </form>
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <button class="button-basket-um" type="button"><img src="img/icons/basket-red.svg" alt="Корзина">2 товара</button>
+             </form>
+             <!--Товары корзины-->
+            <div class="basket">
+                <table>
+                    <tr>
+                        <td><form action="https://echo.htmlacademy.ru" method="post">
+                                <label for="delete-basket" class="visually-hidden">Удалить товар</label>
+                                <button type="button" id="delete-basket">X</button>
+                            </form>
+                    </td>
+                        <td><img src="img/slivochnoe-s-apelsinovym-dzhemom.svg" class="basket" alt="Пломбир с апельсиновым джемом"></td>
+                        <td>Пломбир с апельсиновым джемом</td>
+                        <td>1,5 кг х <span>200 руб.</span></td>
+                        <td>300 руб.</td>
+                    </tr>
+                    <tr>
+                        <td><form action="https://echo.htmlacademy.ru" method="post">
+                                <label for="delete-basket" class="visually-hidden">Удалить товар</label>
+                                <button type="button" id="delete-basket">X</button>
+                            </form>
+                        </td>
+                        <td><img src="img/img/slivochno-klubnichnoe.svg.svg" class="basket" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                        <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                        <td>1,5 кг х <span>300 руб.</span></td>
+                        <td>450 руб.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Итого: 750 руб.</td>
+                    </tr>
+                </table>
+                <form action="https://echo.htmlacademy.ru" method="post">
+                    <button type="submit" class="button button-order">Оформить заказ</button>
+                </form>
+            </div>
             <p>С 10 до 20, ежедневно <br>
                 <a class="telephone" href="tel:+78124502525">8 812 450-25-25</a></p>
             </section>
@@ -142,31 +184,7 @@
             </footer>
 
 
-            <!--Товары корзины-->
-            <div class="basket">
-                <table>
-                    <tr>
-                        <td>X</td>
-                        <td><img src="img/slivochnoe-s-apelsinovym-dzhemom.svg" class="basket" alt="Пломбир с апельсиновым джемом"></td>
-                        <td>Пломбир с апельсиновым джемом</td>
-                        <td>1,5 кг х <span>200 руб.</span></td>
-                        <td>300 руб.</td>
-                    </tr>
-                    <tr>
-                        <td>X</td>
-                        <td><img src="img/img/slivochno-klubnichnoe.svg.svg" class="basket" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                        <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                        <td>1,5 кг х <span>300 руб.</span></td>
-                        <td>450 руб.</td>
-                    </tr>
-                    <tr>
-                        <td colspan="5">Итого: 750 руб.</td>
-                    </tr>
-                </table>
-                <input type="submit" class="button-basket" id="button-basket" value="Оформить заказ">
-            </div>
-
-            <!--Товар при наведении?-->
+                   <!--Товар при наведении?-->
 
         </body>
 
