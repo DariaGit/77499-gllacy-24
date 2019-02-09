@@ -3,17 +3,20 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин мороженого Глэйси</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
-<body style="background-color: #8aa495;">
+<body>
     <header class="main-header">
       <nav class="main-navigation">
         <img class="main-header-logo.svg" src="img/logo.svg" width="64" height="153" alt="Логотип магазина мороженого Глэйси">
         <ul class="site-navigation">
           <li><a href="catalog.html">Каталог</a>
             <ul class="main-catalog-submenu">
-              <li><a href="#"><b>Новинки</b></a></li>
+              <li><a href="#">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
-              <li class="main-catalog-submenu-highlighted"><a href="#">Щербеты</a></li>
+              <li><a class="current" href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
               <li><a href="#">Мелорин</a></li>
             </ul>
@@ -24,12 +27,12 @@
       </nav>
       <section class="user-navigation">
         <a class="site-search" href="#">Поиск по сайту</a>
-       <form action="https://echo.htmlacademy.ru" method="get">
+        <form class="invisible" action="https://echo.htmlacademy.ru" method="get">
         <label class="visually-hidden" for="search-field">Поиск по сайту</label>
         <input type="search" name="site-search" placeholder="Что ищем?" id="search-field">
       </form>
       <a class="login-link" href="#">Вход</a>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="invisible" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="email-field">Email</label>
           <input type="email" name="email" placeholder="Электронная почта" id="email-field">
           <label class="visually-hidden" for="password-field">Пароль</label>
@@ -100,32 +103,32 @@
         </ul>
       </section>
       <section class="main-features">
-        <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
-        <ul class="features-list">
-          <li class="feature-item">
-            <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
-            и проверенных временем технологий.</p>
-          </li>
-          <li class="feature-item">
-            <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
-            дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
-          </li>
-          <li class="feature-item">
-            <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
-            связывает долговременное сотрудничество.</p>
-          </li>
-          <li class="feature-item">
-            <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
-            мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-          </li>
-        </ul>
-      </section>
+          <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
+          <ul class="features-list">
+            <li class="feature-item">
+              <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
+              и проверенных временем технологий.</p>
+            </li>
+            <li class="feature-item">
+              <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
+              дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья</p>
+            </li>
+            <li class="feature-item">
+              <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
+              связывает долговременное сотрудничество.</p>
+            </li>
+            <li class="feature-item">
+              <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
+              мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+            </li>
+          </ul>
+        </section>
       <section class="main-new-in-blog">
         <h2>Новое в нашем блоге</h2>
         <h3><a href="#">10 способов сервировки фруктовых щербетов
         к столу</a></h3>
       </section>
-      <section>
+      <section class="mailing">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form action="https://echo.htmlacademy.ru" method="post">
@@ -162,11 +165,11 @@
         </ul>
       </div>
       <div class="footer-html-academy">
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="109" height="38" alt="Логотип HTML-Academy"></a>
+        <a class="logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="109" height="38" alt="Логотип HTML-Academy"></a>
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
       </div>
     </footer>
-    <form action="https://echo.htmlacademy.ru" method="post">
+    <form class="invisible" action="https://echo.htmlacademy.ru" method="post">
       <p>Мы обязательно вам ответим!</p>
       <p><label class="visually-hidden" for="name-feedback">Ваше имя</label>
       <input type="text" placeholder="Как вас зовут?" id="name-feedback"></p>

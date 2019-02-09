@@ -1,0 +1,271 @@
+body{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #ffffff;
+	background: #8aa495;
+}
+
+a{
+	text-decoration: none;
+}
+
+.invisible{
+	display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.main-navigation{
+	line-height: 18px;
+	color: #ffffff;
+}
+
+.site-navigation,
+.main-catalog-submenu{
+	list-style: none;
+}
+
+.site-navigation>li>a{
+	color: #ffffff;
+	border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+} 
+
+
+.site-navigation>li>a:hover{
+	color: #323232;
+	border: none;
+}
+
+.site-navigation>li>a.current{
+	background-color: #d07058;
+}
+
+.site-navigation>li>a:hover{
+	background-color: #f7f6f3;
+}
+
+.site-navigation>li>a:focus{
+
+}
+
+.site-navigation>li li>a{
+	color: #323232;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.site-navigation>li li:first-child>a{
+	font-weight: 700;
+	border-bottom: 1px solid #d1d0ce;
+}
+
+.site-navigation>li li>a:hover{
+	background-color: #fbded7;
+}
+
+.site-navigation>li li>a:focus{
+	background-color: #ebb3a6;
+}
+
+.site-navigation>li li>a.current{
+	background-color: #d07058;
+	color: #ffffff;
+}
+
+.user-navigation{
+	font-size: 14px;
+	line-height: 16px; 
+}
+
+.user-navigation .telephone{
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.user-navigation>a{
+	font-size: 14px;
+	line-height: 16px; 
+	color: #ffffff;
+	background-color: rgb(255, 255, 255, 0.2);
+}
+
+.user-navigation>a:hover{
+	color: #323232;
+	background-color: #f7f6f3;
+}
+
+.main-features{
+	color: #323232;
+	background-image: url("../img/wafer-pattern.jpg");
+}
+
+.main-features h3{
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;
+}
+
+.main-features ul{
+	list-style: none;
+}
+
+.main-features p{
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.main-new-in-blog{
+background-image: url("../img/strawberry-background.jpg");
+}
+
+.main-new-in-blog h2{
+	font-size: 16px;
+	line-height: 22px;
+	color: #323232;
+}
+
+.main-new-in-blog h3 a{
+	font-size: 24px;
+	line-height: 30px;
+	color: #323232;
+	border-bottom: 1px solid rgb(50, 50, 50, 0.3);
+}
+
+.main-new-in-blog h3 a:hover,
+.main-new-in-blog h3 a:focus {
+	color: #e84d37;
+	text-decoration: none;
+	border-bottom: 1px solid rgb(232, 77, 55, 0.3);
+}
+
+.mailing{
+	background-image: url("../img/bg-post.svg");
+	background-repeat: no-repeat;
+}
+
+.mailing p{
+	font-size: 16px;
+	line-height: 22px;
+	color: #5a5a5a;
+}
+
+.mailing input{
+	font-size: 16px;
+	line-height: 24px;
+	color: #999999;
+	border: 1px solid #d3d3d2;
+}
+
+.mailing input:hover {
+	border: 1px solid #c7c6c5;
+}
+
+.mailing input:active {
+	border: 1px solid #8fbdec;
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  background-color: #e95139;
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active{
+	background-color: #f07a63;
+}
+
+.main-footer ul{
+	list-style: none;
+}
+
+.main-footer a{
+	color: #ffffff;
+	font-size: 13px;
+	line-height: 18px;
+    border-bottom: 1px solid #d1d0ce;
+}
+
+.main-footer a:hover,
+.main-footer a:active {
+	color: #ffbc9e;
+	border-bottom: 1px solid #ffbc9e;
+}
+
+.footer-html-academy a.logo,
+.footer-html-academy a.logo:hover,
+.footer-html-academy a.logo:active{
+	border-bottom: none;
+}
+
+.footer-menu li:first-child{
+	font-weight: 700;
+}
+
+.breadcrumbs{
+	list-style: none;
+}
+
+.breadcrumbs a{
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 16px;
+	border-bottom: 1px solid #d1d0ce;
+}
+
+.breadcrumbs .current{
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
+	color: #ffbc9e;
+	border-bottom: 1px solid #ffbc9e;
+}
+
+.container-catalog h1{
+	color: #ffffff;
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: 700;
+}
+
+.catalog-creamy ul{
+	list-style: none;
+}
+
+.catalog-creamy a{
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+	border-bottom: 1px solid #d1d0ce;
+}
+
+.catalog-creamy a:hover,
+.catalog-creamy a:active {
+	color: #ffbc9e;
+	border-bottom: 1px solid #ffbc9e;
+}
+
+.catalog-creamy a.img{
+	border-bottom: none;
+}
+
