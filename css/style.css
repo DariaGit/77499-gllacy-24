@@ -5,7 +5,176 @@ body{
 	line-height: 22px;
 	font-weight: 400;
 	color: #ffffff;
-	background: #8aa495;
+	background-color: #8aa495;
+}
+/* Сетки*/
+.wraper{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 1145px;
+}
+
+.container{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 1145px;
+}
+
+
+
+.main-header{
+	display: flex;
+	justify-content: space-between;
+	min-height: 105px;
+	outline: 2px solid red;
+	
+}
+
+.main-navigation{
+	display: flex;
+	flex-basis: 853px;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.site-navigation{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.site-navigation li{
+	padding-left: 30px;
+}
+
+.user-navigation{
+	display: flex;
+	flex-basis: 267px;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+
+.main-header-logo{
+	width: 154px;
+	height: 64px;
+}
+
+
+.two-column{
+	display: flex;
+	height: 220px;
+	align-items: stretch;
+	outline: 2px solid red;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.main-new-in-blog{
+	width: 560px;
+	padding-top: 25px;
+	padding-left: 20px;
+	background-image: url("../img/strawberry-background.png");
+	background-repeat: no-repeat;
+}
+
+.main-new-in-blog h3{
+	width: 285px;
+}
+
+.main-new-in-blog h2{
+	margin: 0;
+	padding: 0;
+}
+
+.mailing{
+	position: relative;
+	width: 560px;
+	background-image: url("../img/bg-post.svg");
+	background-repeat: no-repeat;
+}
+
+.mailing .back{
+	position: absolute;
+	background-color: #f8f7f4;
+	height: 210px;
+	margin: 5px;
+	border-radius: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.bonus{
+	background-color: red;
+}
+
+.main-footer{
+	display: flex;
+	margin-top: 40px;
+	margin-bottom: 25px;
+	justify-content: space-between;
+	min-height: 65px;
+	outline: 2px solid red;
+}
+
+.footer-social{
+	display: flex;
+	width: 267px;
+}
+
+.footer-menu{
+	display: flex;
+	justify-content: center;
+	width: 560px;
+}
+
+.footer-html-academy{
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-content: center;
+	width: 267px;
+}
+
+.breadcrumbs{
+	list-style: none;
+	margin-top: 25;
+	margin-bottom: 10px;
+	padding: 0;
+	outline: 2px solid red;
+}
+
+.breadcrumbs li{
+	display: inline;
+}
+
+.category-title{
+	margin: 0;
+	padding: 0;
+	outline: 2px solid red;
+}
+
+.catalog-creamy-cards{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;margin-top: 40px;
+	outline: 2px solid red;
+}
+
+.catalog-creamy-cards .card{
+
+	width: 267px;
 }
 
 a{
@@ -33,6 +202,22 @@ a{
 .main-catalog-submenu{
 	list-style: none;
 }
+
+.site-navigation .open{
+	position: relative;
+}
+
+.site-navigation .open .main-catalog-submenu{
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	display: none;
+}
+
+.site-navigation .open:hover .main-catalog-submenu{
+	display: block;
+}
+
 
 .site-navigation>li>a{
 	color: #ffffff;
@@ -108,9 +293,18 @@ a{
 .main-features{
 	color: #323232;
 	background-image: url("../img/wafer-pattern.jpg");
+	border-radius: 15px;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+	padding-right: 30px;
+	margin-bottom: 40px;
+	outline: 2px solid red;
 }
 
 .main-features h3{
+	margin: 0;
+	padding: 0;
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 500;
@@ -125,9 +319,6 @@ a{
 	line-height: 22px;
 }
 
-.main-new-in-blog{
-background-image: url("../img/strawberry-background.jpg");
-}
 
 .main-new-in-blog h2{
 	font-size: 16px;
@@ -135,24 +326,20 @@ background-image: url("../img/strawberry-background.jpg");
 	color: #323232;
 }
 
-.main-new-in-blog h3 a{
+.main-new-in-blog .title{
 	font-size: 24px;
 	line-height: 30px;
 	color: #323232;
 	border-bottom: 1px solid rgb(50, 50, 50, 0.3);
 }
 
-.main-new-in-blog h3 a:hover,
-.main-new-in-blog h3 a:focus {
+.main-new-in-blog .title:hover,
+.main-new-in-blog .title:focus {
 	color: #e84d37;
 	text-decoration: none;
 	border-bottom: 1px solid rgb(232, 77, 55, 0.3);
 }
 
-.mailing{
-	background-image: url("../img/bg-post.svg");
-	background-repeat: no-repeat;
-}
 
 .mailing p{
 	font-size: 16px;
@@ -217,9 +404,7 @@ background-image: url("../img/strawberry-background.jpg");
 	font-weight: 700;
 }
 
-.breadcrumbs{
-	list-style: none;
-}
+
 
 .breadcrumbs a{
 	color: #ffffff;
@@ -268,4 +453,15 @@ background-image: url("../img/strawberry-background.jpg");
 .catalog-creamy a.img{
 	border-bottom: none;
 }
+/*потом подумаю*/
+.main-slider .picture{
+	margin: 0 auto;
+	width: auto;
+	height: 584px;
+	background-image: url("../img/slider/slide1-ice-cream-1.png"),
+					  url("../img/slider/slide1-ice-cream-2.png");
+	background-position: 0 0, 100px 50px; 	                  ;
+	background-repeat: no-repeat;
+}
+
 
