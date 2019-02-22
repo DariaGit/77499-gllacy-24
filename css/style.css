@@ -60,14 +60,17 @@ img{
 .main-header-logo{
 	width: 154px;
 	height: 64px;
-	margin-top: 0px;
-    padding-top: 7px;	
-    padding-right: 14px;
+	margin-top: 10px;
+	margin-right: 10px;
+   ;	
+    
  }
 
 
 .site-navigation,
 .user-navigation {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -79,9 +82,7 @@ img{
 }
 
 .site-navigation{
-	display: flex;
-    flex-wrap: wrap;
-	width: 854px;
+	max-width: 853px;
 }
 
 
@@ -89,89 +90,197 @@ img{
 	display: none;
 }
 
-.user-navigation{
-    display: flex;
-    max-width: 267px;
-    display: none;
-
-}
 .site-navigation a,
 .user-navigation a {
   display: block;
   vertical-align: middle;
+  position: relative;
 }
 
-.site-navigation a{
-  margin-top: 25px;
-  margin-bottom: 25px;
-  padding-top: 7px;	
-  padding-bottom: 7px;
+.site-navigation .site-navigation-item{
+  position: relative;
+  margin-top: 23px;
+  margin-bottom: 17px;
+  margin-right: 0;
   padding-right: 14px;
   padding-left: 14px;
-  color: #ffffff;
-  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 18px;
+  font-size: 16px;
   font-weight: 700;
+  color: #ffffff;
+ }
+
+.site-navigation-item span{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
- .site-navigation a.open{
+   
+ .site-navigation .open{
  	background-color: #d07058;
  	border-radius: 20px;
+ 	
+ }
+
+ .site-navigation .open span{
+ 	border: none;
  }
 
 
-.site-navigation>li>a:hover{
+.site-navigation .site-navigation-item:hover{
   background-color: #f7f6f3;
   color: #323232;
   border-radius: 20px;
  }
 
 
- .site-navigation a:active{
+ .site-navigation .site-navigation-item:active{
  	box-shadow: 0 -1px 4px 0 #696969;
  }
 
  .current:hover .main-catalog-submenu{
 	display: block;
-	position: absolute;
-	top: 60px;
-	padding: 0;
-	min-width: 142px;
 }
 
 .main-catalog-submenu{
-	position: relative;
+	position: absolute;
+	top: 55px;
+	padding: 0;
+	min-width: 142px;
 	background-color: #f8f7f4;
 	list-style: none;
     margin-top: 7px;
     border-radius: 5px;
-    
+    box-shadow: 0 15px 40px 0 #323232;
 }
 
- .main-catalog-submenu a{
+ .main-catalog-submenu .submenu-item{
 	display: block;
-	margin: 0;
-    padding: 0;
+	margin-right: 0;
+	padding: 0;
+    line-height: 16px;
+    font-size: 14px;
     padding-left: 18px;
     padding-right: 20px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 	color: #323232;
 	font-weight: 400;
 }
 
+.main-catalog-submenu li a{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*Не получается подчеркивание по ширине сделать, как на макете */
 .main-catalog-submenu li:first-child a{
 	font-weight: 700;
-	margin-top: 12px;
+	margin-top: 5px;
+	border-bottom: 1px solid #d1d0ce;
 }
 
 .main-catalog-submenu a:hover{
 	background-color: #fbded7;
+	color: #323232;
+}
+
+.main-catalog-submenu a:active{
+	background-color: #f6b5a5;
+	color: #323232;
+}
+
+.main-catalog-submenu .current{
+	background-color: #d07058;
+	color: #ffffff;
 }
 
 
-
 .main-catalog-submenu li:last-child a{
-	 margin-bottom: 12px;
+	 margin-bottom: 13px;
+}
+
+.user-navigation{
+    position: relative;
+    min-width: 267px;
+    justify-content: flex-end;
+}
+
+ .user-navigation .user-navigation-item{
+ 	height: 18px;
+ 	line-height: 16px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+ 	margin-top: 23px;
+    margin-bottom: 17px;
+ 	margin-right: 10px;
+ 	padding-top: 9px;
+ 	padding-bottom: 9px;
+ 	padding-left: 17px;
+ 	padding-right: 17px;
+ 	background-color: rgb(255, 255, 255, 0.2);
+ 	border-radius: 20px;
+ }
+
+ .user-navigation .user-navigation-item:first-child{
+ 	border-radius: 50%;
+  }
+
+/*Не обнуляется отступ справа у последнего элемента */
+  .user-navigation .user-navigation-item:last-child{
+  	margin-right: 0;
+  }
+
+.user-navigation-item:hover{
+  	color: #323232;
+  	background-color: #f8f7f4;
+  }
+
+/*У корзины колесики не меняют цвет*/
+  .user-navigation-item:hover path{
+  	fill: #323232;
+  }
+
+ .user-navigation .site-search{
+ 	width: 17px;
+ 	height: 17px;
+ 	padding: 7px;
+ }
+
+.user-navigation .login-link{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    width: 58px;
+}
+
+.user-navigation .basket-link{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    width: 66px;
+}
+
+.worktime-phone{
+	position: absolute;
+	top: 80px;
+}
+
+.user-navigation .worktime-phone{
+	text-align: right;
+	top: 60px;
+	line-height: 16px;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.worktime-phone .telephone{
+    line-height: 24px;
+    font-size: 22px;
+    color: #ffffff;
+    padding-top: 5px;
 }
 
 .two-column{
@@ -271,12 +380,6 @@ img{
 
 	width: 267px;
 }
-
-a{
-	text-decoration: none;
-}
-
-
 
 .main-features{
 	color: #323232;
