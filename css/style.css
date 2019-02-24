@@ -1,16 +1,16 @@
 body{
 	margin: 0;
+	padding: 0;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: 400;
 	color: #ffffff;
-	background-color: #849d8f;
-
 }
 
 a{
 	text-decoration: none;
+	color: #ffffff;
 }
 
 img{
@@ -22,7 +22,7 @@ img{
 	display: none;
 }
 
-.visually-hidden:not(:focus):not(:active){
+.visually-hidden{
   position: absolute;
 
   width: 1px;
@@ -38,19 +38,64 @@ img{
   overflow: hidden;
 }
 
-.wrapper {
-  min-width: 1146px;
+.site-wrapper {
   background-color: #849d8f;
-  background-image: url("img/slider/slide1-2ice-cream-and-light.png");
   background-repeat: no-repeat;
   background-position: top center;
-}
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+ }
 
-.container {
+ .container {
   width: 1146px;
   margin: 0 auto;
+  margin-bottom: 0px;
   padding: 0 27px;
 }
+
+ .site-wrapper::before,
+ .site-wrapper::after{
+  content: "";
+  visibility: hidden;
+}
+
+.site-wrapper::before{
+  background-image: url("../img/Slider/slide2-2ice-cream-and-light.png");
+}
+
+.site-wrapper::after{
+  background-image: url("../img/Slider/slide3-2ice-cream-and-light.png");
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 44px;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 41px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: top;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover{
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.button:active,
+.button:focus{
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
 
 .main-header{
 	display: flex;
@@ -62,9 +107,7 @@ img{
 	height: 64px;
 	margin-top: 10px;
 	margin-right: 10px;
-   ;	
-    
- }
+}
 
 
 .site-navigation,
@@ -94,10 +137,9 @@ img{
 .user-navigation a {
   display: block;
   vertical-align: middle;
-  position: relative;
+  
 }
-
-.site-navigation .site-navigation-item{
+.site-navigation-item{
   position: relative;
   margin-top: 23px;
   margin-bottom: 17px;
@@ -145,12 +187,13 @@ img{
 
 .main-catalog-submenu{
 	position: absolute;
-	top: 55px;
+	z-index: 1;
+	top: 62px;
+	left: 190px;
 	padding: 0;
 	min-width: 142px;
 	background-color: #f8f7f4;
 	list-style: none;
-    margin-top: 7px;
     border-radius: 5px;
     box-shadow: 0 15px 40px 0 #323232;
 }
@@ -161,7 +204,7 @@ img{
 	padding: 0;
     line-height: 16px;
     font-size: 14px;
-    padding-left: 18px;
+    padding-left: 23px;
     padding-right: 20px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -169,16 +212,20 @@ img{
 	font-weight: 400;
 }
 
-.main-catalog-submenu li a{
-	margin-right: auto;
-	margin-left: auto;
-}
-
-/*Не получается подчеркивание по ширине сделать, как на макете */
 .main-catalog-submenu li:first-child a{
 	font-weight: 700;
 	margin-top: 5px;
-	border-bottom: 1px solid #d1d0ce;
+}
+
+.main-catalog-submenu li:first-child a:after{
+	position: absolute;
+	display: block;
+	content: "";
+	width: 130px;
+	height: 1px;
+	background-color: #d1d0ce;
+	left: 5px;
+	top: 37px;
 }
 
 .main-catalog-submenu a:hover{
@@ -213,23 +260,26 @@ img{
     font-size: 14px;
     color: #ffffff;
     font-weight: 500;
- 	margin-top: 23px;
+    margin-top: 23px;
     margin-bottom: 17px;
- 	margin-right: 10px;
- 	padding-top: 9px;
- 	padding-bottom: 9px;
+ 	margin-right: 9px;
+ 	padding-top: 7px;
+ 	padding-bottom: 7px;
  	padding-left: 17px;
  	padding-right: 17px;
  	background-color: rgb(255, 255, 255, 0.2);
  	border-radius: 20px;
  }
 
- .user-navigation .user-navigation-item:first-child{
+ .user-navigation-item:first-child{
  	border-radius: 50%;
   }
 
-/*Не обнуляется отступ справа у последнего элемента */
-  .user-navigation .user-navigation-item:last-child{
+.user-navigation-item:last-child{
+  	margin-right: 0;
+  }
+
+  .user-navigation-item:nth-last-child(2){
   	margin-right: 0;
   }
 
@@ -245,8 +295,8 @@ img{
 
  .user-navigation .site-search{
  	width: 17px;
- 	height: 17px;
- 	padding: 7px;
+  	padding: 7px;
+ 	
  }
 
 .user-navigation .login-link{
@@ -266,6 +316,7 @@ img{
 .worktime-phone{
 	position: absolute;
 	top: 80px;
+	z-index: 1;
 }
 
 .user-navigation .worktime-phone{
@@ -281,6 +332,203 @@ img{
     font-size: 22px;
     color: #ffffff;
     padding-top: 5px;
+}
+
+.slider{
+	position: relative;
+    padding-top: 321px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.slider-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slide-title {
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+  
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 800;
+}
+
+.slider-controls{
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  z-index: 20;
+  font-size: 0;
+}
+
+.slider-controls label{
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+  vertical-align: top;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slide{
+  display: none;
+}
+
+.slider-controls label:hover{
+  background-color: rgba(255,255,255,0.4);
+}
+
+#product-1:checked ~ .site-wrapper #slide1,
+#product-2:checked ~ .site-wrapper #slide2,
+#product-3:checked ~ .site-wrapper #slide3{
+  display: block;
+}
+
+#product-1:checked ~ .site-wrapper label[for="product-1"],
+#product-2:checked ~ .site-wrapper label[for="product-2"],
+#product-3:checked ~ .site-wrapper label[for="product-3"]{
+  background-color: #ffffff;
+}
+
+#product-1:checked ~ .site-wrapper{
+  background-color: #849d8f;
+  background-image: url("../img/Slider/slide1-2ice-cream-and-light.png");
+}
+
+#product-2:checked ~ .site-wrapper{
+  background-color: #8996a6;
+  background-image: url("../img/Slider/slide2-2ice-cream-and-light.png");
+}
+
+#product-3:checked ~ .site-wrapper{
+  background-color: #9d8b84;
+  background-image: url("../img/Slider/slide3-2ice-cream-and-light.png");
+}
+
+.slide-button{
+  padding: 12px 44px;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 41px;
+}
+
+.main-promo{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 38px;  
+}
+
+
+.main-promo-item{
+   	width: 521px;
+    border-radius: 20px;
+
+    padding-top: 19px;
+    padding-bottom: 23px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 18px;
+	line-height: 22px;
+	background-position: center center;
+
+
+}
+
+.main-promo-item:nth-child(2){
+	background-image: url("../img/Discount/raspberries-background.jpg");
+	background-repeat: no-repeat;
+
+}
+
+.main-promo-item:nth-child(3){
+	background-image: url("../img/Discount/chocolate background.jpg");
+	background-repeat: no-repeat;
+}
+
+.main-promo-item h3{
+
+	padding: 0;
+	margin: 0;
+	margin-bottom: 15px;
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: 800;
+}
+
+.main-promo-item p{
+	margin: 0;
+	padding: 0;
+	padding-bottom: 45px;
+}
+
+.main-promo-button{
+	font-size: 18px;
+	line-height: 24px;
+	padding-right: 23px;
+	padding-left: 23px;
+	padding-top: 11px;
+	padding-bottom: 11px;
+	
+    float: right;
+
+}
+
+.main-hits{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 38px;
+}
+
+.main-hits .card{
+	width: 267px;
+	position: relative;
+}
+
+.main-hits .card:before{
+	content: "";
+	position: absolute;
+	width: 61px;
+	height: 61px;
+	background-image: url("../img/Icons/hit.svg");
+}
+
+.card{
+	text-align: center;
+}
+
+.card .photo{
+
+	border-radius: 50%;
+}
+
+.main-hits .main-prise{
+	position: absolute;
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 800;
+	bottom: 20px;
+}
+
+.main-prise span{
+	font-size: 30px;
+	line-height: 45px;
+}
+
+.link-block{
+    margin-top: 10px;
+}
+
+.card .name-link{
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
 }
 
 .two-column{
@@ -327,8 +575,6 @@ img{
 
 .main-footer{
 	display: flex;
-	margin-top: 40px;
-	margin-bottom: 25px;
 	justify-content: space-between;
 	min-height: 65px;
 }
@@ -382,6 +628,7 @@ img{
 }
 
 .main-features{
+	margin-top: 40px;
 	color: #323232;
 	background-image: url("../img/wafer-pattern.jpg");
 	border-radius: 15px;
@@ -452,20 +699,6 @@ img{
 	border: 1px solid #8fbdec;
 }
 
-.button {
-  font: inherit;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  background-color: #e95139;
-  border: none;
-}
-
-.button:hover,
-.button:focus,
-.button:active{
-	background-color: #f07a63;
-}
 
 .main-footer ul{
 	list-style: none;
@@ -543,137 +776,3 @@ img{
 .catalog-creamy a.img{
 	border-bottom: none;
 }
-
-
-/*.site-navigation,
-.user-navigation,
-.main-catalog-submenu{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-
-}
-
-.main-navigation{
-	display: flex;
-	justify-content: space-between;
-}
-
-.site-navigation{
-	display: flex;
-	flex-wrap: wrap;
-	position: relative;
-	width: 693px;
-	line-height: 18px;
-	color: #ffffff;
-	height: 0;
-}
-
-
-.site-navigation a,
-.user-navigation a
-{
-	display: block;
-	padding: 27px 26px;
-    vertical-align: middle;
-}
-
-a.menu-button{
-
-}
-
-.user-navigation{
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	flex-basis: 267px;
-	justify-content: flex-end;
-	font-size: 14px;
-	line-height: 16px; 
-}
-
-.site-navigation .main-catalog-submenu{
-	margin: 0;
-	padding: 0;
-	display: none;
-}
-
-
-.open:hover .main-catalog-submenu{
-	display: block;
-	position: absolute;
-	top: 60px;
-	padding: 0;
-}
-
-
-.site-navigation a{
-	color: #ffffff;
-	border-bottom: 1px solid rgb(255, 255, 255, 0.2);
-	
-} 
-
-
-.site-navigation>li>a:hover{
-	color: #323232;
-	border: none;
-}
-
-.site-navigation>li>a.current{
-	background-color: #d07058;
-}
-
-.site-navigation>li>a:hover{
-	background-color: #f7f6f3;
-	border-radius: 20%
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-.site-navigation>li>a:focus{
-
-}
-
-.site-navigation>li li>a{
-	margin: 0;
-	color: #323232;
-	font-size: 14px;
-	line-height: 16px;
-}
-
-.site-navigation>li li:first-child>a{
-	font-weight: 700;
-	border-bottom: 1px solid #d1d0ce;
-}
-
-.site-navigation>li li>a:hover{
-	background-color: #fbded7;
-}
-
-.site-navigation>li li>a:focus{
-	background-color: #ebb3a6;
-}
-
-.site-navigation>li li>a.current{
-	background-color: #d07058;
-	color: #ffffff;
-}
-
-
-.user-navigation .telephone{
-	font-size: 22px;
-	line-height: 24px;
-	font-weight: 700;
-	color: #ffffff;
-}
-
-.user-navigation>a{
-	font-size: 14px;
-	line-height: 16px; 
-	color: #ffffff;
-}
-
-.user-navigation>a:hover{
-	color: #323232;
-	background-color: #f7f6f3;
-}*/
