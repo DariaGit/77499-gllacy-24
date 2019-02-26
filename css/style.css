@@ -153,7 +153,6 @@ img{
   
 }
 .site-navigation-item{
-  position: relative;
   margin-top: 23px;
   margin-bottom: 17px;
   margin-right: 0;
@@ -198,11 +197,15 @@ img{
 	display: block;
 }
 
+.menu-button{
+	position: relative;
+}
+
 .main-catalog-submenu{
 	position: absolute;
 	z-index: 1;
 	top: 62px;
-	left: 190px;
+	left: -10px;
 	padding: 0;
 	min-width: 142px;
 	background-color: #f8f7f4;
