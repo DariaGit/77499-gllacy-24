@@ -844,7 +844,7 @@ img{
 	align-items: center;
 	height: 65px;
 	margin-top: 17px;
-	margin-bottom: 23px;
+	padding-bottom: 20px;
 }
 
 .footer-item:not(:last-child){
