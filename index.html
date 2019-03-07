@@ -19,11 +19,11 @@
                 <nav class="main-navigation">
                     <img class="main-header-logo" src="img/logo.svg" alt="Логотип магазина мороженого Глэйси">
                     <ul class="site-navigation">
-                        <li class="menu-button current"><a class="site-navigation-item" href="catalog.html"><span>Каталог</span></a>
+                        <li class="menu-button current"><a class="site-navigation-item" href="#"><span>Каталог</span></a>
                             <ul class="main-catalog-submenu">
                                 <li><a class="submenu-item" href="#"><span>Новинки</span></a></li>
                                 <li><a class="submenu-item" href="catalog.html">Сливочное</a></li>
-                                <li><a class="submenu-item current" href="#">Щербеты</a></li>
+                                <li><a class="submenu-item" href="#">Щербеты</a></li>
                                 <li><a class="submenu-item" href="#">Фруктовый лед</a></li>
                                 <li><a class="submenu-item" href="#">Мелорин</a></li>
                             </ul>
@@ -245,25 +245,26 @@
                     <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
                 </div>
             </footer>
+            <section class="modal modal-feedback">
+               <button class="modal-close" type="button">Закрыть</button>
+                <h3>Мы обязательно вам ответим!</h3>
+                <form action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                    <label class="visually-hidden" for="name-feedback">Ваше имя</label>
+                    <input type="text" placeholder="Как вас зовут?" id="name-feedback">
+                </p>
+                <p>
+                    <label class="visually-hidden" for="email-feedback">Ваш Email для ответа</label>
+                    <input type="email" name="email-feedback" placeholder="Ваша почта для ответа" id="email-feedback">
+                 </p>
+                <p>
+                    <label class="visually-hidden" for="textarea-feedback">Ваше сообщение</label>
+                    <textarea placeholder="Напишите что-нибудь..." id="textarea-feedback"></textarea>
+                </p>
+                    <button class="button button-feedback" type="submit">Отправить</button>
+                 </form>
+        </section>
         </div>
-        <form class="invisible" action="https://echo.htmlacademy.ru" method="post">
-            <p>Мы обязательно вам ответим!</p>
-            <p>
-                <label class="visually-hidden" for="name-feedback">Ваше имя</label>
-                <input type="text" placeholder="Как вас зовут?" id="name-feedback">
-            </p>
-            <p>
-                <label class="visually-hidden" for="email-feedback">Ваш Email для ответа</label>
-                <input type="email" name="email-feedback" placeholder="Ваша почта для ответа" id="email-feedback">
-            </p>
-            <p>
-                <label class="visually-hidden" for="textarea-feedback">Ваше сообщение</label>
-                <br>
-                <textarea placeholder="Напишите что-нибудь..." id="textarea-feedback"></textarea>
-            </p>
-            <button class="button button-feedback" type="submit">Отправить</button>
-        </form>
-    </div>
     </div>
 </body>
 

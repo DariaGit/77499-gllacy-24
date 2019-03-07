@@ -14,13 +14,13 @@
         <div class="container">
             <header class="main-header">
                 <nav class="main-navigation">
-                    <img class="main-header-logo" src="img/logo.svg" alt="Логотип магазина мороженого Глэйси" width="154" height="64">
+                    <a class="logo-link" href="index.html"><img class="main-header-logo" src="img/logo.svg" alt="Логотип магазина мороженого Глэйси" width="154" height="64"></a>
                     <ul class="site-navigation">
-                        <li class="menu-button current"><a class="site-navigation-item current-menu-item" href="catalog.html"><span>Каталог</span></a>
+                        <li class="menu-button current"><a class="site-navigation-item current-menu-item" href="#"><span>Каталог</span></a>
                             <ul class="main-catalog-submenu">
                                 <li><a class="submenu-item" href="#"><span>Новинки</span></a></li>
-                                <li><a class="submenu-item" href="catalog.html">Сливочное</a></li>
-                                <li><a class="submenu-item current" href="#">Щербеты</a></li>
+                                <li><a class="submenu-item  current" href="catalog.html">Сливочное</a></li>
+                                <li><a class="submenu-item" href="#">Щербеты</a></li>
                                 <li><a class="submenu-item" href="#">Фруктовый лед</a></li>
                                 <li><a class="submenu-item" href="#">Мелорин</a></li>
                             </ul>
@@ -62,8 +62,9 @@
                                 <input type="password" name="password" placeholder="Пароль" id="password-field">
                                 <button type="submit" class="button button-entrance">Войти</button>
                                 <div class="login-form-div">
-                                    <a class="login-form-link" href="#"><span>Забыли пароль?</span></a><br>
-                                    <a class="login-form-link" href="#"><span>Новая регистрация</a></span>
+                                    <a class="login-form-link" href="#"><span>Забыли пароль?</span></a>
+                                    <br>
+                                    <a class="login-form-link" href="#"><span>Новая регистрация</span></a>
                                 </div>
                             </form>
                         </li>
@@ -76,46 +77,46 @@
                                     <circle fill="#343434" cx="15.984" cy="18" r="2" />
                                     <path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z" />
                                 </svg><span>2 товара</span></a>
-                                <form class="site-form basket-form" action="https://echo.htmlacademy.ru" method="post">
-                                    <table class="basket-table">
-                                        <tr class="basket-table-row">
-                                            <td class="basket-table-column-x">
-                                                <button type="button" class="button-X-basket"></button>
-                                            </td>
-                                             <td class="basket-table-column-img">
-                                                <img class="photo-basket" src="img/Catalog/jpg/1.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                                            </td>
-                                             <td class="basket-table-column-name">
-                                                <p>Пломбир с апельсиновым джемом</p>
-                                            </td>
-                                             <td class="basket-table-column-prise">
-                                                <p>1,5 кг х <span>200 руб.</span></p>
-                                            </td>
-                                             <td class="basket-table-column-count">
-                                                <p>300 руб.</p>
-                                            </td>
-                                        </tr>
-                                        <tr class="basket-table-row">
-                                            <td class="basket-table-column-x">
-                                                 <button type="button" class="button-X-basket"></button>
-                                            </td>
-                                            <td class="basket-table-column-img">
-                                                <img class="photo-basket" src="img/Catalog/jpg/3.jpg" width="33" height="33" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                                            </td>
-                                             <td class="basket-table-column-name">
-                                                <p>Клубничный пломбир с присыпкой из белого шоколада</p>
-                                            </td>
-                                             <td class="basket-table-column-prise">
-                                                <p>1,5 кг х <span>300 руб.</span></p>
-                                            </td>
-                                             <td class="basket-table-column-count">
-                                                <p>450 руб.</p>
-                                            </td>
-                                        </tr>
-                                       </table>
-                                       <p class="final-sum">Итого: 750 руб.</p>
-                                       <button type="button" class="button button-basket">Оформить заказ</button>
-                                </form>
+                            <form class="site-form basket-form" action="https://echo.htmlacademy.ru" method="post">
+                                <table class="basket-table">
+                                    <tr class="basket-table-row">
+                                        <td class="basket-table-column-x">
+                                            <button type="button" class="button-X-basket"></button>
+                                        </td>
+                                        <td class="basket-table-column-img">
+                                            <img class="photo-basket" src="img/Catalog/jpg/1.jpg" width="33" height="33" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                                        </td>
+                                        <td class="basket-table-column-name">
+                                            <p>Пломбир с апельсиновым джемом</p>
+                                        </td>
+                                        <td class="basket-table-column-prise">
+                                            <p>1,5 кг х <span>200 руб.</span></p>
+                                        </td>
+                                        <td class="basket-table-column-count">
+                                            <p>300 руб.</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="basket-table-row">
+                                        <td class="basket-table-column-x">
+                                            <button type="button" class="button-X-basket"></button>
+                                        </td>
+                                        <td class="basket-table-column-img">
+                                            <img class="photo-basket" src="img/Catalog/jpg/3.jpg" width="33" height="33" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                                        </td>
+                                        <td class="basket-table-column-name">
+                                            <p>Клубничный пломбир с присыпкой из белого шоколада</p>
+                                        </td>
+                                        <td class="basket-table-column-prise">
+                                            <p>1,5 кг х <span>300 руб.</span></p>
+                                        </td>
+                                        <td class="basket-table-column-count">
+                                            <p>450 руб.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <p class="final-sum">Итого: 750 руб.</p>
+                                <button type="button" class="button button-basket">Оформить заказ</button>
+                            </form>
                         </li>
                         <li>
                             <div class="worktime-phone">
@@ -135,51 +136,63 @@
                     <li class="current">Сливочное</li>
                 </ul>
                 <h1 class="category-title">Сливочное мороженое</h1>
-                <div class="bonus">
+                
                     <section class="catalog-filtres">
                         <form action="https://echo.htmlacademy.ru" method="get">
                             <div class="filters-wrapper">
-                                <div class="filtres-category">
-                                    <p>Сортировка</p>
-                                    <div class="filtres-item sort">
-                                        <span>по популярности</span>
+                                <div class="filter-sorting">
+                                    <div class="filter-title">Сортировка:</div>
+                                    <div class="filter-item sorting-popular"><span class="item-text">по популяности</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#fff" d="M5.5 10L0 0h11"/></svg>
+                                </div>
+                                </div>
+
+                                <div class="filter-price">
+                                    <div class="filter-title">Цена: 100 руб. – 500 руб.</div>
+                                    <div class="filter-item range-controls">
+                                        <div class="scale">
+                                            <div class="bar"></div>
+                                        </div>
+                                        <div class="range-toggle range-toggle-min"></div>
+                                        <div class="range-toggle range-toggle-max"></div>
                                     </div>
                                 </div>
-                                <div class="filtres-category">
-                                    <p>Цена: 100 руб. – 500 руб.</p>
-                                    <div class="filtres-item price">
-                                        <div class="line-transparante"></div>
-                                        <div class="line-white"></div>
-                                        <button class="price-button first-button" type="button"></button>
-                                        <button class="price-button second-button" type="button"></button>
-                                        <div class="radio-button"></div>
+                                    
+                                <div class="filter-fet">
+                                    <div class="filter-title">Жирность:</div>
+                                    <div class="filter-item item-fet">
+                                        <div class="radio-icon"><svg class="fet-unchecked" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/></svg></div>
+                                        <span class="item-text">0%</span>
+                                        <div class="radio-icon"><svg class="fet-checked" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/><circle fill="#FFFFFF" cx="12.5" cy="12.5" r="4.5"/></svg></div>
+                                        <span class="item-text">до 10%</span>
+                                        <div class="radio-icon"><svg class="fet-unchecked" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/></svg></div>
+                                        <span class="item-text">до 30%</span>
+                                        <div class="radio-icon"><svg class="fet-unchecked" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/></svg></div>
+                                        <span class="item-text">выше 30%</span>
                                     </div>
                                 </div>
-                                <div class="filtres-category">
-                                    <p>Жирность:</p>
-                                    <div class="filtres-item">
-                                        <input type="radio" name="fat" value="0"><span>0%</span>
-                                        <input type="radio" name="fat" value="10" checked><span>до 10%</span>
-                                        <input type="radio" name="fat" value="30"><span>до 30%</span>
-                                        <input type="radio" name="fat" value="31"><span>выше 30%</span>
-                                    </div>
-                                </div>
-                                <div class="filtres-category">
-                                    <p>Наполнители:</p>
-                                    <div class="filtres-item">
-                                        <input type="checkbox" name="chocolate" value="chocolate" checked><span>шоколадные</span>
-                                        <input type="checkbox" name="sugar-topping" value="sugar-topping" checked><span>сахарные присыпки</span>
-                                        <input type="checkbox" name="fruits" value="fruits"><span>фрукты</span>
-                                        <input type="checkbox" name="syrups" value="syrups"><span>сиропы</span>
-                                        <input type="checkbox" name="jams" value="jams"><span>джемы</span>
+
+                                <div class="filter-topings">
+                                    <div class="filter-title">Наполнители:</div>
+                                    <div class="filter-item topings-item">
+                                       <div class="radio-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
+                                        </div>
+                                       <span class="item-text">шоколадные</span>
+                                        <div class="radio-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg></div>
+                                        <span class="item-text">сахарные присыпки</span>
+                                        <div class="radio-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg></div>
+                                        <span class="item-text">фрукты</span>
+                                        <div class="radio-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg></div>
+                                        <span class="item-text">сиропы</span>
+                                        <div class="radio-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg></div>
+                                        <span class="item-text">джемы</span>
                                     </div>
                                 </div>
                                 <button class="button button-sorting" type="submit">Применить</button>
-                                <div>
-                                </div>
+                            </div>
                         </form>
                     </section>
-                    </div>
+                   
                     <section class="cards-catalog">
                         <article class="card">
                             <a class="photo-link card-content" href="#"><img class="photo" src="img/Catalog/jpg/1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
