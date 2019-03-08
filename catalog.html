@@ -138,18 +138,22 @@
                 <h1 class="category-title">Сливочное мороженое</h1>
                 
                     <section class="catalog-filtres">
-                        <form action="https://echo.htmlacademy.ru" method="get">
-                            <div class="filters-wrapper">
-                                <div class="filter-sorting">
-                                    <div class="filter-title">Сортировка:</div>
-                                    <div class="filter-item sorting-popular"><span class="item-text">по популяности</span>
+                        <h2 class="visually-hidden">Фильтр товаров</h2>
+                        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                            <fieldset>
+                                <legend>Сортировка:</legend>
+                                <div class="filter-item filter-sotring">
+                                    <select >
+                                        <option>по популярности</option>
+                                    </select>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#fff" d="M5.5 10L0 0h11"/></svg>
                                 </div>
-                                </div>
-
-                                <div class="filter-price">
-                                    <div class="filter-title">Цена: 100 руб. – 500 руб.</div>
-                                    <div class="filter-item range-controls">
+                            </fieldset>
+                            
+                            <fieldset>
+                                <legend>Цена: 100 руб. – 500 руб.</legend>
+                                <div class="filter-item price">
+                                    <div class="range-controls">
                                         <div class="scale">
                                             <div class="bar"></div>
                                         </div>
@@ -157,39 +161,63 @@
                                         <div class="range-toggle range-toggle-max"></div>
                                     </div>
                                 </div>
-                                    
-                                <div class="filter-fet">
-                                    <div class="filter-title">Жирность:</div>
-                                    <div class="filter-item item-fet">
-                                        <div class="radio-icon"><svg class="fet-unchecked" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/></svg></div>
-                                        <span class="item-text">0%</span>
-                                        <div class="radio-icon"><svg class="fet-checked" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/><circle fill="#FFFFFF" cx="12.5" cy="12.5" r="4.5"/></svg></div>
-                                        <span class="item-text">до 10%</span>
-                                        <div class="radio-icon"><svg class="fet-unchecked" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/></svg></div>
-                                        <span class="item-text">до 30%</span>
-                                        <div class="radio-icon"><svg class="fet-unchecked" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/></svg></div>
-                                        <span class="item-text">выше 30%</span>
-                                    </div>
-                                </div>
+                            </fieldset>
 
-                                <div class="filter-topings">
-                                    <div class="filter-title">Наполнители:</div>
-                                    <div class="filter-item topings-item">
-                                       <div class="radio-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
-                                        </div>
-                                       <span class="item-text">шоколадные</span>
-                                        <div class="radio-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 27 23"><path fill="#FFFFFF" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#FFFFFF" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg></div>
-                                        <span class="item-text">сахарные присыпки</span>
-                                        <div class="radio-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg></div>
-                                        <span class="item-text">фрукты</span>
-                                        <div class="radio-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg></div>
-                                        <span class="item-text">сиропы</span>
-                                        <div class="radio-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 23 23"><path fill="#FFFFFF" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg></div>
-                                        <span class="item-text">джемы</span>
-                                    </div>
+                            <fieldset>
+                                <legend>Жирность:</legend>
+                                <div class="filter-item">
+                                    <ul>
+                                        <li class="filter-option filter-option-radio">
+                                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fet" value="0" id="filter-0">
+                                            <label for="filter-0">0%</label>
+                                        </li>
+                                        <li class="filter-option filter-option-radio">
+                                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fet" value="10" id="filter-10" checked>
+                                            <label for="filter-10">до 10%</label>
+                                        </li>
+                                        <li class="filter-option filter-option-radio">
+                                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fet" value="30" id="filter-30">
+                                            <label for="filter-30">до 30%</label>
+                                        </li>
+                                        <li class="filter-option filter-option-radio">
+                                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="fet" value="31" id="filter-31">
+                                            <label for="filter-31">выше 30%</label>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <button class="button button-sorting" type="submit">Применить</button>
-                            </div>
+                            </fieldset>
+                            <fieldset>
+                                 <legend>Наполнители:</legend>
+                                 <div class="filter-item topings">
+                                     <ul>
+                                        <li class="filter-option">
+                                          <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="chocolate" id="filter-chocolate" checked>
+                                          <label for="filter-chocolate">шоколадные</label>
+                                        </li>
+                                        
+                                        <li class="filter-option">
+                                          <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="sugar-topings" id="filter-sugar-topings" checked>
+                                          <label for="filter-sugar-topings">сахарные присыпки</label>
+                                        </li>
+                                        
+                                        <li class="filter-option">
+                                          <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fruits" id="filter-fruits">
+                                          <label for="filter-fruits">фрукты</label>
+                                        </li>
+                                        
+                                        <li class="filter-option">
+                                          <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="syrups" id="filter-syrups">
+                                          <label for="filter-syrups">сиропы</label>
+                                        </li>
+                                        
+                                        <li class="filter-option">
+                                          <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="jams" id="filter-jams">
+                                          <label for="filter-jams">джемы</label>
+                                        </li>
+                                     </ul>
+                                 </div>
+                            </fieldset>
+                            <button class="button button-sorting" type="submit">Применить</button>
                         </form>
                     </section>
                    
