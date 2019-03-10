@@ -64,8 +64,9 @@
                                 <input type="password" name="password" placeholder="Пароль" id="password-field">
                                 <button type="submit" class="button button-entrance">Войти</button>
                                 <div class="login-form-div">
-                                    <a class="login-form-link" href="#"><span>Забыли пароль?</span></a><br>
-                                    <a class="login-form-link" href="#"><span>Новая регистрация</a></span>
+                                    <a class="login-form-link" href="#"><span>Забыли пароль?</span></a>
+                                    <br>
+                                    <a class="login-form-link" href="#"><span>Новая регистрация</span></a>
                                 </div>
                             </form>
                         </li>
@@ -78,7 +79,7 @@
                                         <circle cx="15.984" cy="18" r="2" />
                                     </g>
                                 </svg><span>Пусто</span></a>
-                            </li>
+                        </li>
                         <li>
                             <div class="worktime-phone">
                                 <p>С 10 до 20, ежедневно
@@ -246,26 +247,84 @@
                 </div>
             </footer>
             <section class="modal modal-feedback">
-               <button class="modal-close" type="button">Закрыть</button>
+                <button class="modal-close" type="button">Закрыть</button>
                 <h3>Мы обязательно вам ответим!</h3>
                 <form action="https://echo.htmlacademy.ru" method="post">
-                <p>
-                    <label class="visually-hidden" for="name-feedback">Ваше имя</label>
-                    <input type="text" placeholder="Как вас зовут?" id="name-feedback">
-                </p>
-                <p>
-                    <label class="visually-hidden" for="email-feedback">Ваш Email для ответа</label>
-                    <input type="email" name="email-feedback" placeholder="Ваша почта для ответа" id="email-feedback">
-                 </p>
-                <p>
-                    <label class="visually-hidden" for="textarea-feedback">Ваше сообщение</label>
-                    <textarea placeholder="Напишите что-нибудь..." id="textarea-feedback"></textarea>
-                </p>
+                    <p>
+                        <label class="visually-hidden" for="name-feedback">Ваше имя</label>
+                        <input type="text" name="feedback-name" placeholder="Как вас зовут?" id="name-feedback">
+                    </p>
+                    <p>
+                        <label class="visually-hidden" for="email-feedback">Ваш Email для ответа</label>
+                        <input type="email" name="email-feedback" placeholder="Ваша почта для ответа" id="email-feedback">
+                    </p>
+                    <p>
+                        <label class="visually-hidden" for="textarea-feedback">Ваше сообщение</label>
+                        <textarea placeholder="Напишите что-нибудь..." name="message" id="textarea-feedback"></textarea>
+                    </p>
                     <button class="button button-feedback" type="submit">Отправить</button>
-                 </form>
-        </section>
+                </form>
+            </section>
         </div>
     </div>
+    <script>
+        var link = document.querySelector(".map-button");
+        var popup = document.querySelector(".modal-feedback");
+        var close = popup.querySelector(".modal-close");
+        var form = popup.querySelector("form");
+        var login = popup.querySelector("[name=feedback-name]");
+        var email = popup.querySelector("[name=email-feedback]");
+        var message = popup.querySelector("[name=message]");
+        var isStorageSupport = true;
+        var storage = "";
+  
+        try {
+          storage = localStorage.getItem("login");
+        } catch (err) {
+            isStorageSupport = false;
+        }
+
+        link.addEventListener("click", function (evt) {
+           evt.preventDefault();
+           popup.classList.add("modal-show");
+          if (storage) {
+             login.value = storage;
+             email.focus();
+        } else {
+         login.focus();
+         }
+           login.focus();
+        });
+
+        close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+        });
+
+        form.addEventListener("submit", function (evt) {
+        if (!login.value || !email.value || !message.value) {
+        evt.preventDefault();
+        console.log("Нужно ввести логин, пароль и текст сообщения.");
+        popup.classList.remove("modal-error");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("modal-error");
+        } else {
+        if (isStorageSupport) {
+        localStorage.setItem("login", login.value);
+      }
+        }
+  });
+        window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
+      }
+    }
+  });
+    </script>
 </body>
 
 </html>
