@@ -662,8 +662,8 @@ img{
 }
 
 .main-features{
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-top: 38px;
+	margin-bottom: 38px;
 	color: #323232;
 	background-image: url("../img/wafer-pattern.jpg");
 	border-radius: 15px;
@@ -851,32 +851,29 @@ img{
 .mailing input:active {
 	border: 1px solid #8fbdec;
 }
-/*Не получается на всю ширину растянуть*/
+
 .main-map{
 	position: relative;
 	height: 430px;
-	margin-left: auto;
-	margin-right: auto;
+    margin-left:  -27px;
+    margin-right: -27px;
 	background-image: url(../img/map.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
-.main-map:before{
-	position: absolute;
-	content: "";
-	width: 80px;
-	height: 140px;
-	top: 137px;
-	left: 240px;
-	background-image: url("../img/Icons/pin.svg");
+.yandex-map{
+	width: 100%;
+	height: 430px;
+    border: 0;
+   
 }
 
 .main-map .info{
 	position: absolute;
 	top: 63px;
-	right: 0;
-	width: 245px;
+	right: 27px;
+	width: 252px;
 	background-color: #fdfefe;
 	color: #323232;
 	font-size: 14px;
@@ -884,14 +881,14 @@ img{
 	border-radius: 10px;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	padding-left: 28px;
-	padding-right: 27px;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 .main-map p{
 	margin: 0;
 	padding: 0;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
 }
 
 .main-map span{
@@ -903,11 +900,10 @@ img{
 .map-button{
 	font-size: 18px;
 	line-height: 24px;
-	padding-left: 23px;
-	padding-right: 23px;
+	padding-left: 27px;
+	padding-right: 27px;
 	padding-top: 11px;
 	padding-bottom: 11px;
-
 }
 
 .main-footer{
@@ -1994,6 +1990,7 @@ a.login-form-link span{
 	background-color: #f8f7f4;
 	color: #999999;
 	border-radius: 10px;
+	z-index: 2;
 }
 
 .modal-feedback{
@@ -2091,4 +2088,19 @@ a.login-form-link span{
 	padding-left: 23px;
 	padding-right: 23px;
 	float: right;
+}
+
+.overlay{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(49, 49, 49, 0.3);
+	z-index: 1;
+}
+
+.overlay-show{
+  display: block;
 }

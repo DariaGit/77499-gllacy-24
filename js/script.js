@@ -1,6 +1,7 @@
   
         var link = document.querySelector(".map-button");
         var popup = document.querySelector(".modal-feedback");
+        var ovrl = document.querySelector(".overlay");
         var close = popup.querySelector(".modal-close");
         var form = popup.querySelector("form");
         var login = popup.querySelector("[name=feedback-name]");
@@ -18,6 +19,7 @@
         link.addEventListener("click", function (evt) {
            evt.preventDefault();
            popup.classList.add("modal-show");
+           ovrl.classList.add("overlay-show");
           if (storage) {
              login.value = storage;
              email.focus();
@@ -30,6 +32,7 @@
         close.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.remove("modal-show");
+        ovrl.classList.remove("overlay-show");
         popup.classList.remove("modal-error");
         });
 
@@ -51,6 +54,7 @@
       evt.preventDefault();
       if (popup.classList.contains("modal-show")) {
         popup.classList.remove("modal-show");
+        ovrl.classList.remove("overlay-show");
         popup.classList.remove("modal-error");
       }
     }
