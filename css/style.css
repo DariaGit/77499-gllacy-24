@@ -578,8 +578,7 @@ img{
 	padding-left: 23px;
 	padding-top: 11px;
 	padding-bottom: 11px;
-	
-    float: right;
+	float: right;
 
 }
 
@@ -609,8 +608,8 @@ img{
 	    flex-wrap: wrap;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	-ms-flex-direction: column;
+	    flex-direction: column;
 	width: 267px;
 	position: relative;
 	text-align: center;
@@ -655,7 +654,7 @@ img{
 	content: "";
 	position: absolute;
 	width: 294px;
-	min-height: 407px;
+	height: 407px;
 	top: -10px;
 	left: -14px;
 	background-color: rgba(255, 255, 255, 0.2);
@@ -693,11 +692,15 @@ img{
 	font-size: 18px;
 	text-shadow: none;
 	line-height: 24px;
+	padding-top: 13px;
+	padding-bottom: 13px;
 	padding-left: 17px;
 	padding-right: 17px;
-	-ms-flex-item-align: center;
-	    -ms-grid-row-align: center;
-	    align-self: center;
+	width: 226px;
+	left: 0; 
+	right: 0;
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 
@@ -731,6 +734,7 @@ img{
 	margin-top: 38px;
 	margin-bottom: 38px;
 	color: #323232;
+	background-color: #fbf8f2;
 	background-image: url("../img/wafer-pattern.jpg");
 	border-radius: 15px;
 	padding-top: 25px;
@@ -1288,14 +1292,19 @@ a.social-button:active path{
 	background-color: transparent;
 	outline: none;
 	color: #ffffff;
-	appearance: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
+		appearance: none;
 }
+
+.filter-sotring select::-ms-expand {
+    display: none;
+}  
 
 .filter-sotring svg{
 	position: absolute;
 	right: 14px;
+	top: 35px;
 }
 
 .filter-sotring:hover select,
@@ -1698,8 +1707,8 @@ a.social-button:active path{
 .button-entrance {
 	padding-top: 10px;
 	padding-bottom: 10px;
-	padding-left: 25px;
-	padding-right: 25px;
+	padding-left: 23px;
+	padding-right: 23px;
 	font-size: 18px;
 	line-height: 24px;
 	float: left;
@@ -1772,8 +1781,7 @@ a.login-form-link span{
 .photo-basket{
 	width: 33px;
 	height: 33px;
-	margin-bottom: auto;
-    margin-top: auto;
+	vertical-align: middle;
     border-radius: 50%;
  }
 
@@ -1799,6 +1807,7 @@ a.login-form-link span{
 
 .basket-table-column-img{
 	width: 47px;
+
 
 }
 
@@ -1827,22 +1836,21 @@ a.login-form-link span{
 }
 
 .button-X-basket{
+	position: relative;
 	background: transparent;
 	font-size: 0;
     border: 0;
     cursor: pointer;
-    width: 11px;
-    height: 11px;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
 }
 
 .button-X-basket::before,
 .button-X-basket::after {
   content: "";
   position: absolute;
-  margin-bottom: auto;
-  margin-top: auto;
-  top: 0; 
-  bottom: 0; 
+  top: 0;
   width: 1px;
   height: 15px;
   background-color: #231f20;
@@ -1857,12 +1865,6 @@ a.login-form-link span{
   -webkit-transform: rotate(-45deg);
       transform: rotate(-45deg);
 }
-
-.button-X-basket:hover::before,
-.button-X-basket:hover::after{
-	height: 20px;
-}
-
 
 @-webkit-keyframes bounce {
   0% {
