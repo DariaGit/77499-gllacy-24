@@ -611,7 +611,7 @@ img{
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	max-width: 267px;
+	width: 267px;
 	position: relative;
 	text-align: center;
 	margin-right: 25px;
@@ -628,7 +628,7 @@ img{
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	max-width: 267px;
+	width: 267px;
 	position: relative;
 	text-align: center;
 	margin-right: 25px;
