@@ -14,7 +14,7 @@
         <div class="container">
             <header class="main-header">
                 <nav class="main-navigation">
-                    <a class="logo-link" href="index.html"><img class="main-header-logo" src="img/logo.svg" alt="Логотип магазина мороженого Глэйси" width="154" height="64"></a>
+                    <a class="logo-link" href="index.html"><img class="main-header-logo" src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глэйси" width="154" height="64"></a>
                     <ul class="site-navigation">
                         <li class="menu-button current"><a class="site-navigation-item current-menu-item" href="#"><span>Каталог</span></a>
                             <ul class="main-catalog-submenu">
@@ -120,9 +120,8 @@
                         </li>
                         <li>
                             <div class="worktime-phone">
-                                <p>С 10 до 20, ежедневно
-                                    <br>
-                                    <a class="telephone" href="tel:+78124502525">8 812 450-25-25</a></p>
+                                <p class="work-time">С 10 до 20, ежедневно</p>
+                                <p><a class="telephone" href="tel:+78124502525">8 812 450-25-25</a></p>
                             </div>
                         </li>
                     </ul>
@@ -142,7 +141,7 @@
                     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                         <fieldset>
                             <legend>Сортировка:</legend>
-                            <div class="filter-item filter-sotring">
+                            <div class="filter-item filter-sorting">
                                 <select>
                                     <option>по популярности</option>
                                 </select>
@@ -300,17 +299,17 @@
             </main>
 
             <ul class="pagination-list">
-                <li class="pagination-item pagination-item-back"><span class="visually-hidden">Назад</span>
+                <li class="pagination-item pagination-item-back"><a href="#"><span class="visually-hidden">Назад</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
                         <path fill="#fff" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z" />
-                    </svg>
+                    </svg></a>
                 </li>
-                <li class="pagination-item pagination-item-current"><span class="visually-hidden">Страница 1</span>1</li>
+                <li class="pagination-item"><a href="#" class="pagination-item-current"><span class="visually-hidden">Страница 1</span>1</a></li>
                 <li class="pagination-item"><a href="#"><span class="visually-hidden">Страница 2</span>2</a></li>
                 <li class="pagination-item"><a href="#"><span class="visually-hidden">Страница 3</span>3</a></li>
                 <li class="pagination-item"><a href="#"><span class="visually-hidden">Страница 4</span>4</a></li>
                 <li class="pagination-item"><a href="#"><span class="visually-hidden">Страница 5</span>5</a></li>
-                <li class="pagination-item pagination-item-forward"><a><span class="visually-hidden">Вперед</span><svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#fff" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg></a></li>
+                <li class="pagination-item pagination-item-forward"><a href="#"><span class="visually-hidden">Вперед</span><svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#fff" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/></svg></a></li>
             </ul>
 
             <footer class="main-footer catalog-footer">

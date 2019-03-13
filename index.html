@@ -17,7 +17,7 @@
         <div class="container">
             <header class="main-header">
                 <nav class="main-navigation">
-                    <img class="main-header-logo" src="img/logo.svg" alt="Логотип магазина мороженого Глэйси">
+                    <img class="main-header-logo" src="img/logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глэйси">
                     <ul class="site-navigation">
                         <li class="menu-button current"><a class="site-navigation-item" href="#"><span>Каталог</span></a>
                             <ul class="main-catalog-submenu">
@@ -63,11 +63,9 @@
                                 <label class="visually-hidden" for="password-field">Пароль</label>
                                 <input type="password" name="password" placeholder="Пароль" id="password-field">
                                 <button type="submit" class="button button-entrance">Войти</button>
-                                <div class="login-form-div">
-                                    <a class="login-form-link" href="#"><span>Забыли пароль?</span></a>
-                                    <br>
-                                    <a class="login-form-link" href="#"><span>Новая регистрация</span></a>
-                                </div>
+                                <p class="login-form-p"><a class="login-form-link" href="#"><span>Забыли пароль?</span></a></p>
+                                <p class="login-form-p"><a class="login-form-link" href="#"><span>Новая регистрация</span></a></p>
+                               
                             </form>
                         </li>
                         <li class="user-navigation-item">
@@ -82,12 +80,10 @@
                         </li>
                         <li>
                             <div class="worktime-phone">
-                                <p>С 10 до 20, ежедневно
-                                    <br>
-                                    <a class="telephone" href="tel:+78124502525">8 812 450-25-25</a></p>
+                                <p class="work-time">С 10 до 20, ежедневно</p>
+                                <p><a class="telephone" href="tel:+78124502525">8 812 450-25-25</a></p>
                             </div>
                         </li>
-
                     </ul>
                 </section>
 
@@ -135,7 +131,7 @@
                         <a class="photo-link card-content" href="#"><img class="photo" src="img/catalog/jpg/1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
                         <p class="main-prise card-content">310&#8381;<span>/кг</span></p>
                         <div class="link-block card-content"><a class="name-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></div>
-                        <button class="button card-button card-content">Быстрый просмотр</button>
+                        <button type="button" class="button card-button card-content">Быстрый просмотр</button>
                     </article>
                     <article class="card main-card">
                         <a class="photo-link card-content" href="#"><img class="photo" src="img/catalog/jpg/2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада"></a>
@@ -186,9 +182,8 @@
                         <div class="back">
                             <h2 class="visually-hidden">Подписка на рассылку</h2>
                             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                            <form action="https://echo.htmlacademy.ru" method="post">
+                            <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
                                 <label class="visually-hidden" for="email-mailing-field">Электроннная почта</label>
-                                <br>
                                 <input type="email" placeholder="Электроннная почта" name="email-mailing" id="email-mailing-field">
                                 <button class="button button-mailing" type="submit">Отправить</button>
                             </form>
@@ -202,12 +197,12 @@
                 <iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/-/CCac5Clt"></iframe>
                 <div class="info">
                     <h2 class="visually-hidden">Адрес магазина и телефон</h2>
-                    <p>Адрес главного офиса
+                    <p class="address">Адрес главного офиса
                         <br> и офлайн-магазина:
                         <br> <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
-                    <p>Для заказов по телефону:
-                        <br> <span>8 812 450-25-25</span>
-                        <br> (с 10 до 20 ежедневно)</p>
+                    <p>Для заказов по телефону:</p>
+                    <p><span>8 812 450-25-25</span></p>
+                    <p>(с 10 до 20 ежедневно)</p>
                     <button class="button map-button" type="button">Форма обратной связи</button>
                 </div>
             </section>
