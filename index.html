@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Магазин мороженого Глэйси</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
@@ -65,7 +65,6 @@
                                 <button type="submit" class="button button-entrance">Войти</button>
                                 <p class="login-form-p"><a class="login-form-link" href="#"><span>Забыли пароль?</span></a></p>
                                 <p class="login-form-p"><a class="login-form-link" href="#"><span>Новая регистрация</span></a></p>
-                               
                             </form>
                         </li>
                         <li class="user-navigation-item">
@@ -78,17 +77,13 @@
                                     </g>
                                 </svg><span>Пусто</span></a>
                         </li>
-                        <li>
-                            <div class="worktime-phone">
-                                <p class="work-time">С 10 до 20, ежедневно</p>
-                                <p><a class="telephone" href="tel:+78124502525">8 812 450-25-25</a></p>
-                            </div>
-                        </li>
                     </ul>
+                    <div class="worktime-phone">
+                        <p class="work-time">С 10 до 20, ежедневно</p>
+                        <p><a class="telephone" href="tel:+78124502525">8 812 450-25-25</a></p>
+                    </div>
                 </section>
-
             </header>
-
             <main>
                 <h1 class="visually-hidden">Магазин мороженого Глэйси</h1>
                 <section class="slider">
@@ -129,25 +124,25 @@
                     <h2 class="visually-hidden">Хиты продаж</h2>
                     <article class="card main-card">
                         <a class="photo-link card-content" href="#"><img class="photo" src="img/catalog/jpg/1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
-                        <p class="main-prise card-content">310&#8381;<span>/кг</span></p>
+                        <p class="main-prise card-content">310&#8381;<span> /кг</span></p>
                         <div class="link-block card-content"><a class="name-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></div>
                         <button type="button" class="button card-button card-content">Быстрый просмотр</button>
                     </article>
                     <article class="card main-card">
                         <a class="photo-link card-content" href="#"><img class="photo" src="img/catalog/jpg/2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада"></a>
-                        <p class="main-prise card-content">380&#8381;<span>/кг</span></p>
+                        <p class="main-prise card-content">380&#8381;<span> /кг</span></p>
                         <div class="link-block card-content"><a class="name-link" href="#">Сливочно-кофейное с кусочками шоколада</a></div>
                         <button class="button card-button card-content">Быстрый просмотр</button>
                     </article>
                     <article class="card main-card">
                         <a class="photo-link card-content" href="#"><img class="photo" src="img/catalog/jpg/3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
-                        <p class="main-prise card-content">355&#8381;<span>/кг</span></p>
+                        <p class="main-prise card-content">355&#8381;<span> /кг</span></p>
                         <div class="link-block card-content"><a class="name-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></div>
                         <button class="button card-button card-content">Быстрый просмотр</button>
                     </article>
                     <article class="card main-card">
                         <a class="photo-link card-content" href="#"><img class="photo" src="img/catalog/jpg/4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой"></a>
-                        <p class="main-prise card-content">415&#8381;<span>/кг</span></p>
+                        <p class="main-prise card-content">415&#8381;<span> /кг</span></p>
                         <div class="link-block card-content"><a class="name-link" href="#">Сливочное крем-брюле с карамельной подливкой</a></div>
                         <button class="button card-button card-content">Быстрый просмотр</button>
                     </article>
@@ -184,7 +179,7 @@
                             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                             <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
                                 <label class="visually-hidden" for="email-mailing-field">Электроннная почта</label>
-                                <input type="email" placeholder="Электроннная почта" name="email-mailing" id="email-mailing-field">
+                                <input class="mailng-email" type="email" placeholder="Электроннная почта" name="email-mailing" id="email-mailing-field">
                                 <button class="button button-mailing" type="submit">Отправить</button>
                             </form>
                         </div>
@@ -199,10 +194,10 @@
                     <h2 class="visually-hidden">Адрес магазина и телефон</h2>
                     <p class="address">Адрес главного офиса
                         <br> и офлайн-магазина:
-                        <br> <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
+                        <br> <span class="address-span">ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
                     <p>Для заказов по телефону:</p>
-                    <p><span>8 812 450-25-25</span></p>
-                    <p>(с 10 до 20 ежедневно)</p>
+                    <p><span class="phone-span">8 812 450-25-25</span></p>
+                    <p class="time-p">(с 10 до 20 ежедневно)</p>
                     <button class="button map-button" type="button">Форма обратной связи</button>
                 </div>
             </section>
@@ -243,7 +238,7 @@
             <section class="modal modal-feedback">
                 <button class="modal-close" type="button">Закрыть</button>
                 <h3>Мы обязательно вам ответим!</h3>
-                <form action="https://echo.htmlacademy.ru" method="post">
+                <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
                     <p>
                         <label class="visually-hidden" for="name-feedback">Ваше имя</label>
                         <input type="text" name="feedback-name" placeholder="Как вас зовут?" id="name-feedback">

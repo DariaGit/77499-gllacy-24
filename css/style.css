@@ -92,7 +92,8 @@ body{
      background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
      box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
      border-bottom: none;
-     color: #ffffff;
+     color: #fefefe;
+     font-weight: 700;
      outline: none;
 }
  .main-header{
@@ -136,7 +137,8 @@ body{
  .site-navigation{
      max-width: 853px;
 }
- .site-navigation a, .user-navigation a{
+ .site-navigation a, 
+ .user-navigation a{
      display: block;
      vertical-align: middle;
      border-bottom: none;
@@ -273,7 +275,7 @@ body{
      font-weight: 500;
      margin-top: 23px;
      margin-bottom: 17px;
-     margin-right: 9px;
+     margin-right: 11px;
      padding-top: 7px;
      padding-bottom: 7px;
      padding-left: 17px;
@@ -287,7 +289,7 @@ body{
  .user-navigation-item:last-child{
      margin-right: 0;
 }
- .user-navigation-item:nth-last-child(2) a{
+ .user-navigation-item:last-child a{
      margin-right: 0;
 }
  .un-menu-link:hover{
@@ -311,8 +313,12 @@ body{
      -webkit-box-pack: justify;
      -ms-flex-pack: justify;
      justify-content: space-between;
-     width: 58px;
+     padding-left: 15px;
+     padding-right: 15px;
 }
+ .login-link span{
+     margin-left: 6px; 
+ }
  .user-navigation .basket-link{
      display: -webkit-box;
      display: -ms-flexbox;
@@ -323,6 +329,8 @@ body{
      -webkit-box-pack: justify;
      -ms-flex-pack: justify;
      justify-content: space-between;
+     padding-left: 15px;
+     padding-right: 17px;
 }
  .basket-link span{
      padding-left: 5px;
@@ -369,10 +377,10 @@ body{
  .slide-title{
      width: 700px;
      margin: 0 auto;
-     margin-bottom: 27px;
+     margin-bottom: 28px;
      font-size: 60px;
      line-height: 60px;
-     font-weight: 800;
+     font-weight: 700;
 }
  .slider-controls{
      position: absolute;
@@ -425,10 +433,10 @@ body{
      background-image: url("../img/slider/slide3-2ice-cream-and-light.png");
 }
  .slide-button{
-     padding: 12px 44px;
-     font-weight: 600;
-     font-size: 31px;
-     line-height: 41px;
+     padding: 10px 41px;
+     font-weight: 700;
+     font-size: 32px;
+     line-height: 44px;
 }
  .main-promo{
      display: -webkit-box;
@@ -439,18 +447,24 @@ body{
      -webkit-box-pack: justify;
      -ms-flex-pack: justify;
      justify-content: space-between;
-     margin-top: 38px;
+     margin-top: 39px;
 }
  .main-promo-item{
-     width: 521px;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     align-items: flex-start;
+     width: 522px;
      border-radius: 20px;
      padding-top: 19px;
      padding-bottom: 23px;
-     padding-left: 20px;
-     padding-right: 20px;
+     padding-left: 19px;
+     padding-right: 19px;
      font-size: 18px;
      line-height: 22px;
+     font-weight: 700;
      background-position: center center;
+     border-radius: 20px;
 }
  .main-promo-item:nth-child(2){
      background-image: url("../img/discount/raspberries-background.jpg");
@@ -466,21 +480,23 @@ body{
      margin-bottom: 15px;
      font-size: 35px;
      line-height: 41px;
-     font-weight: 800;
+     font-weight: 700;
 }
  .main-promo-item p{
      margin: 0;
      padding: 0;
-     padding-bottom: 45px;
+     padding-bottom: 43px;
+
 }
  .main-promo-button{
+     align-self: flex-end;
      font-size: 18px;
      line-height: 24px;
-     padding-right: 23px;
-     padding-left: 23px;
+     font-weight: 700;
+     padding-right: 22px;
+     padding-left: 22px;
      padding-top: 11px;
      padding-bottom: 11px;
-     float: right;
 }
  .main-hits, .cards-catalog{
      display: -webkit-box;
@@ -578,6 +594,8 @@ body{
      font-size: 18px;
      text-shadow: none;
      line-height: 24px;
+     color: #fefefe;
+     font-weight: 700;
      padding-top: 13px;
      padding-bottom: 13px;
      padding-left: 17px;
@@ -588,16 +606,18 @@ body{
      margin-left: auto;
      margin-right: auto;
 }
- .main-hits .main-prise, .cards-catalog .main-prise{
+ .main-hits .main-prise, 
+ .cards-catalog .main-prise{
      position: absolute;
      font-size: 45px;
      line-height: 45px;
-     font-weight: 800;
+     font-weight: 700;
      bottom: 20px;
 }
  .main-prise span{
      font-size: 30px;
      line-height: 45px;
+     font-weight: 700;
 }
  .link-block{
      margin-top: 8px;
@@ -713,6 +733,7 @@ body{
      padding: 0;
      font-size: 16px;
      line-height: 22px;
+     font-weight: 500;
      color: #323232;
 }
  .main-new-in-blog .title{
@@ -748,6 +769,11 @@ body{
      line-height: 22px;
      color: #5a5a5a;
 }
+ .mailing-form{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
  .button-mailing{
      padding-right: 18px;
      padding-left: 18px;
@@ -756,9 +782,10 @@ body{
      margin-top: -1px;
      font-size: 18px;
      line-height: 24px;
-     float: right;
+     font-weight: 700;
+     color: #fefefe;
 }
- .mailing input{
+.mailng-email{
      box-sizing: border-box;
      width: 368px;
      padding-top: 10px;
@@ -766,12 +793,29 @@ body{
      padding-left: 15px;
      padding-right: 15px;
      color: #323232;
-     font-weight: 800;
      font-size: 16px;
      line-height: 24px;
+     font-weight: 400;
+     box-shadow: 0 0 0 1px #d3d3d2;
+     border: none;
+     border-radius: 5px;
+     outline:none;
 }
  .mailing input[placeholder]{
      font-weight: 400;
+}
+.mailng-email:hover{
+     box-shadow: 0 0 0 2px #c7c6c5;
+     outline: none;
+     border: none;
+}
+.mailng-email:active, 
+.mailng-email:focus{
+     box-shadow: 0 0 0 2px #8fbdec;
+     font-weight: 700;
+     color: #323232;
+     outline: none;
+     border: none;
 }
  .main-map{
      position: relative;
@@ -796,6 +840,7 @@ body{
      color: #323232;
      font-size: 14px;
      line-height: 20px;
+     font-weight: 400;
      border-radius: 10px;
      padding-top: 27px;
      padding-bottom: 30px;
@@ -807,6 +852,9 @@ body{
      padding: 0;
      margin-bottom: 3px;
 }
+.time-p{
+     line-height: 22px;
+}
  p.address{
      margin: 0;
      padding: 0;
@@ -815,13 +863,19 @@ body{
  .main-map span{
      margin-top: 10px;
      font-size: 18px;
+     font-weight: 700;
+}
+ .address-span{
      line-height: 24px;
-     font-weight: 800;
+}
+ .phone-span{
+     line-height: 22px;
 }
  .map-button{
      font-size: 18px;
      line-height: 24px;
      font-weight: 700;
+     color: #fefefe;
      padding-left: 27px;
      padding-right: 27px;
      padding-top: 11px;
@@ -940,7 +994,7 @@ body{
      top: 6px;
 }
  li.provider a{
-     font-weight: 800;
+     font-weight: 700;
 }
  .footer-html-academy{
      display: -webkit-box;
@@ -961,13 +1015,15 @@ body{
      margin: 0;
      padding: 0;
 }
- .footer-html-academy p, .footer-html-academy a{
+ .footer-html-academy p, 
+ .footer-html-academy a{
      margin: 0;
      padding: 0;
      font-size: 12px;
      line-height: 18px;
+     color: #fefefe;
 }
- .main-footer ul{
+.main-footer ul{
      list-style: none;
 }
  .footer-html-academy a.logo, .footer-html-academy a.logo:hover, .footer-html-academy a.logo:active{
@@ -1017,7 +1073,7 @@ body{
      font-size: 35px;
      line-height: 41px;
      margin-top: 3px;
-     margin-bottom: 11px;
+     margin-bottom: 8px;
 }
  .filter{
      display: -webkit-box;
@@ -1057,10 +1113,11 @@ body{
  .filter legend{
      font-size: 14px;
      line-height: 16px;
+     font-weight: 500;
      margin: 0;
      padding: 0;
      margin-bottom: 5px;
-     margin-left: 17px;
+     margin-left: 16px;
 }
  .filter ul{
      display: -webkit-box;
@@ -1094,7 +1151,7 @@ body{
      font-weight: 500;
 }
  .filter-sorting{
-     padding-right: 50px;
+     padding-right: 32px;
 }
  .filter-sorting select{
      margin: 0;
@@ -1102,6 +1159,9 @@ body{
      border: none;
      background-color: transparent;
      outline: none;
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 18px;
      color: #ffffff;
      -webkit-appearance: none;
      -moz-appearance: none;
@@ -1109,6 +1169,11 @@ body{
 }
  .filter-sorting select::-ms-expand{
      display: none;
+}
+.filter-sorting option{
+     font-size: 14px;
+     line-height: 16px;
+     font-weight: 400;
 }
  .filter-sorting svg{
      position: absolute;
@@ -1126,6 +1191,37 @@ body{
  .filter-sorting:focus path{
      fill: #323232;
 }
+ .price-from-to{
+     border: none;
+     background-color: transparent;
+     font-family: inherit;
+     color: #ffffff;
+     font-size: 14px;
+     line-height: 16px;
+     font-weight: 500;
+     width: 30px;
+ }
+  .price-div{
+     position: relative;
+     margin: 0;
+     padding: 0;
+     display: inline-block;
+     vertical-align: top;
+ }
+ .price-div:last-child{
+     margin-left: 39px;
+ }
+  .price-div:first-child:before,
+  .price-div:last-child:before{
+     position: absolute;
+     content: "руб.";
+     left: 28px;
+ }
+ .price-div:first-child:after{
+     position: absolute;
+     content: "–";
+     left: 57px;
+ }
  .filter-input-checkbox + label:before{
      content: "";
      position: absolute;
@@ -1374,8 +1470,7 @@ body{
  .site-form input[type="password"], 
  .modal input[type="text"], 
  .modal input[type="email"], 
- .modal textarea, 
- .mailing input{
+ .modal textarea{
      box-sizing: border-box;
      outline:none;
      box-shadow: 0 0 0 1px #d3d3d2;
@@ -1389,8 +1484,7 @@ body{
  .site-form input[type="password"]:hover, 
  .modal input[type="text"]:hover, 
  .modal input[type="email"]:hover, 
- .modal textarea:hover, 
- .mailing input:hover{
+ .modal textarea:hover{
      box-shadow: 0 0 0 2px #c7c6c5;
      outline: none;
      border: none;
@@ -1409,11 +1503,9 @@ body{
  .modal textarea:active, 
  .modal input[type="text"]:focus, 
  .modal input[type="email"]:focus, 
- .modal textarea:focus, 
- .mailing input:active, 
- .mailing input:focus{
+ .modal textarea:focus{
      box-shadow: 0 0 0 2px #8fbdec;
-     font-weight: 800;
+     font-weight: 700;
      color: #323232;
      outline: none;
      border: none;
@@ -1449,13 +1541,16 @@ body{
  .login-item:hover .login-form{
      display: block;
 }
- .login-form input[type="email"], .login-form input[type="password"]{
+ .login-form input[type="email"], 
+ .login-form input[type="password"]{
      width: 240px;
      margin-bottom: 20px;
      padding-top: 10px;
      padding-bottom: 10px;
      padding-left: 12px;
      padding-right: 12px;
+     color: #999999;
+     font-weight: 400;
 }
  .button-entrance{
      padding-top: 10px;
@@ -1465,6 +1560,8 @@ body{
      margin-right: 18px;
      font-size: 18px;
      line-height: 24px;
+     font-weight: 700;
+     color: #fefefe;
      float: left;
 }
  .login-form-p{
@@ -1478,6 +1575,7 @@ body{
      padding: 0;
      font-size: 13px;
      line-height: 24px;
+     font-weight: 400;
      color: #323232;
      border: none;
      background-color: transparent;
@@ -1542,16 +1640,25 @@ body{
      width: 69px;
 }
  .final-sum{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-end;
      text-align: right;
      font-size: 15px;
      line-height: 18px;
      color: #323232;
-     font-weight: 800;
+     font-weight: 700;
 }
  .button-basket{
-     float: right;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-end;
      font-size: 18px;
      line-height: 24px;
+     color: #fefefe;
+     font-weight: 700;
+     margin-right: 0;
+     margin-left: auto;
      padding-top: 10px;
      padding-bottom: 10px;
      padding-left: 17px;
@@ -1705,22 +1812,40 @@ body{
      -webkit-transform: rotate(-45deg);
      transform: rotate(-45deg);
 }
+ .feedback-form{
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+     align-content: flex-start;
+ }
  .modal-feedback h3{
      margin: 0;
      padding: 0;
      font-size: 24px;
      line-height: 28px;
-     font-weight: 600;
+     font-weight: 500;
      color: #323232;
 }
  .modal-feedback input[type="text"], 
  .modal-feedback input[type="email"], 
  .modal-feedback textarea{
+     font-size: 16px;
+     font-weight: 400;
+     color: #999999;
      padding-top: 10px;
      padding-bottom: 10px;
      padding-left: 13px;
      padding-right: 13px;
      margin-bottom: 5px;
+}
+.modal-feedback input[type="text"]:active,
+.modal-feedback input[type="text"]:focus, 
+.modal-feedback input[type="email"]:active, 
+.modal-feedback input[type="email"]:focus,
+.modal-feedback textarea:active,
+.modal-feedback textarea:focus{
+     font-weight: 700;
+     color: #323232;
 }
  .modal-feedback input[type="text"]{
      width: 265px;
@@ -1734,13 +1859,15 @@ body{
      margin-bottom: 0;
 }
  .button-feedback{
+     align-self: flex-end;
      font-size: 18px;
      line-height: 24px;
+     font-weight: 700;
+     color: #fefefe;
      padding-top: 11px;
      padding-bottom: 11px;
      padding-left: 23px;
      padding-right: 23px;
-     float: right;
 }
  .overlay{
      display: none;
