@@ -1201,23 +1201,24 @@ body{
      font-weight: 500;
      width: 30px;
  }
-  .price-div{
+  .prise-span{
+     display: block;
      position: relative;
      margin: 0;
      padding: 0;
      display: inline-block;
      vertical-align: top;
  }
- .price-div:last-child{
+  .prise-span:last-child{
      margin-left: 39px;
  }
-  .price-div:first-child:before,
-  .price-div:last-child:before{
+  .prise-span:first-child:before,
+  .prise-span:last-child:before{
      position: absolute;
      content: "руб.";
      left: 28px;
  }
- .price-div:first-child:after{
+ .prise-span:first-child:after{
      position: absolute;
      content: "–";
      left: 57px;
