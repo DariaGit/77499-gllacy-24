@@ -565,7 +565,7 @@ body{
      width: 267px;
      position: relative;
      text-align: center;
-     margin-right: 25px;
+     margin-right: 26px;
      margin-bottom: 37px;
 }
  .main-hits .card{
@@ -653,9 +653,11 @@ body{
      font-size: 45px;
      line-height: 45px;
      font-weight: 700;
-     bottom: 20px;
+    ;
 }
- .main-hits .main-prise{
+ .main-hits .main-prise,
+ .cards-catalog .main-prise
+ {
      top: 164px;
      left: -2px;
  }
@@ -973,14 +975,10 @@ body{
      -webkit-box-pack: justify;
      -ms-flex-pack: justify;
      justify-content: space-between;
-     -webkit-box-align: center;
-     -ms-flex-align: center;
-     align-items: center;
-     height: 65px;
-     padding-top: 18px;
-     padding-right: 0px;
-     padding-bottom: 27px;
-     padding-left: 0px;
+     align-items: flex-end;
+     height: 60px;
+     margin-top: 18px;
+     margin-bottom: 20px;
 }
  .footer-item:not(:last-child){
      margin-right: 26px;
@@ -997,7 +995,9 @@ body{
      border-bottom: 1px solid #ffbc9e;
 }
  .footer-social{
-     width: 267px;
+     width: 265px;
+     margin-bottom: 5px;
+     padding-left: 2px;
 }
  .footer-social ul{
      display: -webkit-box;
@@ -1021,7 +1021,7 @@ body{
      justify-content: center;
      width: 32px;
      height: 32px;
-     margin-right: 15px;
+     margin-right: 13px;
 }
  a.social-button{
      border-bottom: none;
@@ -1047,24 +1047,27 @@ body{
      display: -webkit-box;
      display: -ms-flexbox;
      display: flex;
-     -ms-flex-wrap: wrap;
      flex-wrap: wrap;
-     -webkit-box-pack: center;
-     -ms-flex-pack: center;
      justify-content: center;
+     box-sizing: border-box;
      width: 560px;
+     padding-bottom: 4px;
+     padding-left: 3px;
 }
- .footer-menu ul{
+ .footer-menu .left-col,
+ .footer-menu .right-col{
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+ }
+ .footer-menu .left-col{
+     margin-right: 33px;
+ }
+ .footer-menu p{
+     position: relative;
      margin: 0;
      padding: 0;
-     margin-left: 30px;
-}
- .footer-menu ul:first-child{
-     margin-left: 0;
-}
- .provider{
-     position: relative;
-}
+ }
  .provider:before{
      content: "";
      position: absolute;
@@ -1074,9 +1077,6 @@ body{
      background-repeat: no-repeat;
      left: -22px;
      top: 6px;
-}
- li.provider a{
-     font-weight: 700;
 }
  .footer-html-academy{
      display: -webkit-box;
@@ -1105,10 +1105,34 @@ body{
      line-height: 18px;
      color: #fefefe;
 }
+.footer-html-academy img{
+     padding-left: 2px;
+}
 .main-footer ul{
      list-style: none;
 }
- .footer-html-academy a.logo, .footer-html-academy a.logo:hover, .footer-html-academy a.logo:active{
+ .catalog-footer .footer-social{
+     padding-left: 1px;
+     margin-bottom: 6px;
+ }
+ .catalog-footer .footer-menu{
+     padding-left: 4px;
+     padding-bottom: 5px;
+ }
+  .catalog-footer{
+     position: relative;
+ }
+ .catalog-footer:before{
+     content: "";
+     position: absolute;
+     top: -19px;
+     width: 1146px;
+     height: 1px;
+     background-color: rgba(255, 255, 255, 0.3);
+ }
+ .footer-html-academy a.logo, 
+ .footer-html-academy a.logo:hover, 
+ .footer-html-academy a.logo:active{
      border-bottom: none;
 }
  .footer-menu li:first-child{
@@ -1487,7 +1511,7 @@ body{
      margin: 0;
      padding: 0;
      margin-top: 45px;
-     margin-bottom: 31px;
+     margin-bottom: 51px;
 }
  .pagination-item{
      margin-right: 4px;
@@ -1539,9 +1563,6 @@ body{
 .pagination-item-forward:active path,
 .pagination-item-forward:focus path{
      fill: rgba(50, 50, 50);
-}
- .catalog-footer{
-     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 /*Всплывающие окна*/
  .site-form{
