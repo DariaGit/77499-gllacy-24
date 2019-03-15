@@ -893,7 +893,7 @@ body{
 }
  .main-map{
      position: relative;
-     height: 430px;
+     height: 429px;
      margin-left: -27px;
      margin-right: -27px;
      background-image: url(../img/map.jpg);
@@ -902,7 +902,7 @@ body{
 }
  .yandex-map{
      width: 100%;
-     height: 430px;
+     height: 429px;
      border: 0;
 }
  .main-map .info{
@@ -916,7 +916,7 @@ body{
      line-height: 20px;
      font-weight: 400;
      border-radius: 10px;
-     padding-top: 27px;
+     padding-top: 28px;
      padding-bottom: 30px;
      padding-left: 26px;
      padding-right: 24px;
@@ -932,17 +932,25 @@ body{
  p.address{
      margin: 0;
      padding: 0;
-     margin-bottom: 20px;
+     margin-bottom: 18px;
 }
  .main-map span{
      margin-top: 10px;
      font-size: 18px;
      font-weight: 700;
 }
- .address-span{
+ span.address-span{ 
+     display: block;
+     margin: 0;
+     padding: 0;
+     margin-top: 1px;
      line-height: 24px;
 }
- .phone-span{
+ span.phone-span{
+     display: block;
+     margin: 0;
+     padding: 0;
+     margin-top: 5px;
      line-height: 22px;
 }
  .map-button{
@@ -952,9 +960,9 @@ body{
      color: #fefefe;
      padding-left: 27px;
      padding-right: 27px;
-     padding-top: 11px;
+     padding-top: 9px;
      padding-bottom: 11px;
-     margin-top: 20px;
+     margin-top: 19px;
 }
  .main-footer{
      display: -webkit-box;
