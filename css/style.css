@@ -12,7 +12,9 @@ body{
      text-decoration: none;
      color: #ffffff;
 }
- a:hover, a:active, a:focus{
+ a:hover, 
+ a:active, 
+ a:focus{
      color: #ffbc9e;
      border-bottom: 1px solid #ffbc9e;
 }
@@ -91,7 +93,8 @@ body{
      border-bottom: none;
      color: #ffffff;
 }
- .button:active, .button:focus{
+ .button:active, 
+ .button:focus{
      background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
      background: -webkit-gradient(linear, left top, left bottom, from(#d84732), to(#e1613e));
      background: -o-linear-gradient(top, #d84732 0%, #e1613e 100%);
@@ -117,13 +120,17 @@ body{
      margin-top: 10px;
      margin-right: 10px;
 }
- .logo-link, .logo-link:hover, .logo-link:active, .logo-link:focus{
+ .logo-link, 
+ .logo-link:hover, 
+ .logo-link:active, 
+ .logo-link:focus{
      padding: 0;
      margin: 0;
      border-bottom: none;
      font-size: 0;
 }
- .site-navigation, .user-navigation{
+ .site-navigation, 
+ .user-navigation{
      display: -webkit-box;
      display: -ms-flexbox;
      display: flex;
@@ -180,14 +187,26 @@ body{
  .site-navigation .open span{
      border: none;
 }
- .site-navigation .site-navigation-item:hover{
+ .site-navigation-item:hover{
      background-color: #f7f6f3;
      color: #323232;
      border-radius: 20px;
 }
- .site-navigation .site-navigation-item:active{
+ .site-navigation-item:hover span{
+    border-bottom: none;
+}
+ a.site-navigation-item:active,
+ a.site-navigation-item:focus{
+     background-color: #ededed;
      -webkit-box-shadow: 0 -1px 4px 0 #696969;
              box-shadow: 0 -1px 4px 0 #696969;
+     outline: none;
+     border-radius: 20px;
+     color: #323232;
+}
+ a.site-navigation-item:active span,
+ a.site-navigation-item:focus span{
+     border-bottom: none;
 }
  .current:hover .main-catalog-submenu{
      display: block;
@@ -284,7 +303,7 @@ body{
      font-weight: 500;
      margin-top: 23px;
      margin-bottom: 17px;
-     margin-right: 12px;
+     margin-right: 10px;
      padding-top: 7px;
      padding-bottom: 7px;
      padding-left: 17px;
@@ -338,11 +357,11 @@ body{
      -webkit-box-pack: justify;
      -ms-flex-pack: justify;
      justify-content: space-between;
-     padding-left: 17px;
+     padding-left: 16px;
      padding-right: 17px;
 }
  .basket-link span{
-     padding-left: 6px;
+     padding-left: 8px;
 }
  .user-navigation .basket-full{
      background-color: #f7f6f3;
@@ -374,7 +393,7 @@ body{
 }
  .slider{
      position: relative;
-     padding-top: 321px;
+     padding-top: 319px;
      text-align: center;
      color: #ffffff;
 }
@@ -386,7 +405,7 @@ body{
  .slide-title{
      width: 700px;
      margin: 0 auto;
-     margin-bottom: 28px;
+     margin-bottom: 30px;
      font-size: 60px;
      line-height: 60px;
      font-weight: 700;
@@ -456,7 +475,7 @@ body{
      -webkit-box-pack: justify;
      -ms-flex-pack: justify;
      justify-content: space-between;
-     margin-top: 39px;
+     margin-top: 41px;
 }
  .main-promo-item{
      display: -webkit-box;
@@ -471,17 +490,14 @@ body{
      -webkit-box-align: start;
          -ms-flex-align: start;
              align-items: flex-start;
-     width: 522px;
+     width: 560px;
      border-radius: 20px;
-     padding-top: 19px;
-     padding-bottom: 23px;
-     padding-left: 19px;
-     padding-right: 19px;
+     padding-top: 15px;
      font-size: 18px;
      line-height: 22px;
      font-weight: 700;
      background-position: center center;
-     border-radius: 20px;
+     border-radius: 15px;
 }
  .main-promo-item:nth-child(2){
      background-image: url("../img/discount/raspberries-background.jpg");
@@ -495,6 +511,7 @@ body{
      padding: 0;
      margin: 0;
      margin-bottom: 15px;
+     padding-left: 19px;
      font-size: 35px;
      line-height: 41px;
      font-weight: 700;
@@ -502,7 +519,9 @@ body{
  .main-promo-item p{
      margin: 0;
      padding: 0;
-     padding-bottom: 43px;
+     padding-left: 19px;
+     padding-right: 28px;
+     margin-bottom: 44px;
      max-width: 100%;
 }
  .main-promo-button{
@@ -515,8 +534,11 @@ body{
      padding-left: 22px;
      padding-top: 11px;
      padding-bottom: 11px;
+     margin-right: 21px;
+     margin-bottom: 24px;
 }
- .main-hits, .cards-catalog{
+ .main-hits, 
+ .cards-catalog{
      display: -webkit-box;
      display: -ms-flexbox;
      display: flex;
@@ -525,7 +547,7 @@ body{
      -webkit-box-pack: start;
      -ms-flex-pack: start;
      justify-content: flex-start;
-     margin-top: 38px;
+     margin-top: 40px;
 }
  .cards-catalog{
      margin-top: 40px;
@@ -559,7 +581,7 @@ body{
      width: 267px;
      position: relative;
      text-align: center;
-     margin-right: 25px;
+     margin-right: 26px;
 }
  .cards-catalog .card:nth-child(4n+4){
      margin-right: 0;
@@ -633,11 +655,24 @@ body{
      font-weight: 700;
      bottom: 20px;
 }
+ .main-hits .main-prise{
+     top: 164px;
+     left: -2px;
+ }
  .main-prise span{
      font-size: 30px;
      line-height: 45px;
      font-weight: 700;
+     margin-right: 2px;
 }
+ .main-prise .prise-ruble{
+     margin: 0;
+     padding: 0;
+     font-size: 45px;
+     line-height: 45px;
+     font-weight: 700;
+     margin-left: 5px;
+ }
  .link-block{
      margin-top: 8px;
      font-size: 16px;
@@ -646,6 +681,10 @@ body{
      width: 258px;
      padding-left: 6px;
 }
+ .main-hits .link-block{
+     margin-top: 7px;
+     padding-left: 5px;
+ }
  .card .photo-link{
      -ms-flex-item-align: center;
      -ms-grid-row-align: center;
@@ -655,13 +694,16 @@ body{
  .main-features{
      margin-top: 38px;
      margin-bottom: 38px;
+     box-sizing: border-box;
+     height: 306px;
+     min-height: 306px;
      color: #323232;
      background-color: #fbf8f2;
      background-image: url("../img/wafer-pattern.jpg");
      border-radius: 15px;
      padding-top: 25px;
-     padding-left: 21px;
-     padding-right: 15px;
+     padding-left: 20px;
+     padding-right: 28px;
 }
  .main-features h3{
      margin: 0;
@@ -669,58 +711,53 @@ body{
      font-size: 24px;
      line-height: 30px;
      font-weight: 500;
+     margin-bottom: 21px;
 }
- .main-features .features-list{
-     display: -webkit-box;
-     display: -ms-flexbox;
+
+ .features-columns{
      display: flex;
-     -ms-flex-wrap: wrap;
-     flex-wrap: wrap;
-     -webkit-box-pack: justify;
-     -ms-flex-pack: justify;
-     justify-content: space-between;
-     list-style: none;
-     margin: 0;
      padding: 0;
-     margin-top: 20px;
-}
- .feature-item{
-     position: relative;
-     width: 487px;
-     padding-left: 54px;
-     margin-bottom: 25px;
-}
- .feature-item:before{
-     content: "";
-     position: absolute;
-     width: 49px;
-     height: 49px;
-}
- .feature-item:first-child:before{
-     left: 0;
-     top: -12px;
-     background-image: url("../img/icons/ice-cream.svg");
-}
- .feature-item:nth-child(2):before{
-     left: -4px;
-     top: -12px;
-     background-image: url("../img/icons/cow.svg");
-}
- .feature-item:nth-child(3):before{
-     left: 0;
-     top: -15px;
-     background-image: url("../img/icons/eco.svg");
-}
- .feature-item:nth-child(4):before{
-     left: -4px;
-     top: -15px;
-     background-image: url("../img/icons/thermometer.svg");
-}
+     margin: 0;
+ }
+ .features-columns .col-1{
+     width: 540px;
+     padding: 0;
+     margin: 0;
+ }
+ .features-columns .col-2{
+     width: 528px;
+ }
  .main-features p{
+     position: relative;
      font-size: 16px;
      line-height: 22px;
      margin: 0;
      padding: 0;
+     padding-left: 57px;
+     margin-bottom: 22px;
+}
+ .features-columns .col-1{
+     margin-right: 26px;
+ }
+ .main-features p:before{
+     content: "";
+     position: absolute;
+     width: 49px;
+     height: 49px;
+     top: -13px;
+     left: 0;
+ }
+ .ice-cream:before{
+     background-image: url("../img/icons/ice-cream.svg");
+}
+ .leaf:before{
+     background-image: url("../img/icons/eco.svg");
+}
+ .cow:before{
+     background-image: url("../img/icons/cow.svg");
+}
+ .thermometer:before{
+     background-image: url("../img/icons/thermometer.svg");
 }
  .two-column{
      display: -webkit-box;
