@@ -48,7 +48,7 @@
                             <path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" fill="#fff"></path></svg></a>
                             <div class="site-form search-form">
                                 <form action="https://echo.htmlacademy.ru" method="get">
-                                    <label class="visually-hidden" for="search-field">Поиск по сайту</label> <input id="search-field" name="site-search" placeholder="Что ищем?" type="text">
+                                    <label class="visually-hidden" for="search-field">Поиск по сайту</label> <input class="input-box user-menu-input" id="search-field" name="site-search" placeholder="Что ищем?" type="text">
                                 </form>
                             </div>
                         </li>
@@ -59,9 +59,14 @@
                                 <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"></path>
                             </g></svg> <span>Вход</span></a>
                             <form action="https://echo.htmlacademy.ru" class="site-form login-form" method="post">
-                                <label class="visually-hidden" for="email-field">Email</label> <input id="email-field" name="email" placeholder="Электронная почта" type="email"> <label class="visually-hidden" for="password-field">Пароль</label> <input id="password-field" name="password" placeholder="Пароль" type="password"> <button class="button button-entrance" type="submit">Войти</button>
-                                <p class="login-form-p"><a class="login-form-link" href="#"><span>Забыли пароль?</span></a></p>
-                                <p class="login-form-p"><a class="login-form-link" href="#"><span>Новая регистрация</span></a></p>
+                                <label class="visually-hidden" for="email-field">Email</label> <input class="input-box user-menu-input" id="email-field" name="email" placeholder="Электронная почта" type="email"> <label class="visually-hidden" for="password-field">Пароль</label> <input class="input-box user-menu-input" id="password-field" name="password" placeholder="Пароль" type="password">
+                                <div class="entr-block">
+                                    <button class="button button-entrance" type="submit">Войти</button>
+                                    <div class="entr-links-block">
+                                        <p class="login-form-p"><a class="login-form-link" href="#"><span>Забыли пароль?</span></a></p>
+                                        <p class="login-form-p"><a class="login-form-link" href="#"><span>Новая регистрация</span></a></p>
+                                    </div>
+                                </div>
                             </form>
                         </li>
                         <li class="user-navigation-item">
@@ -115,28 +120,28 @@
                         <p class="main-prise card-content">310<span class="prise-ruble">&#8381;</span><span>/кг</span></p>
                         <div class="link-block card-content">
                             <a class="name-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-                        </div><button class="button card-button card-content" type="button">Быстрый просмотр</button>
+                        </div><a class="button card-button card-content" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="card main-card">
                         <a class="photo-link card-content" href="#"><img alt="Сливочно-кофейное с кусочками шоколада" class="photo" height="267" src="img/catalog/jpg/2.jpg" width="267"></a>
                         <p class="main-prise card-content">380<span class="prise-ruble">&#8381;</span><span>/кг</span></p>
                         <div class="link-block card-content">
                             <a class="name-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
-                        </div><button class="button card-button card-content">Быстрый просмотр</button>
+                        </div><a class="button card-button card-content" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="card main-card">
                         <a class="photo-link card-content" href="#"><img alt="Сливочно-клубничное с присыпкой из белого шоколада" class="photo" height="267" src="img/catalog/jpg/3.jpg" width="267"></a>
                         <p class="main-prise card-content">355<span class="prise-ruble">&#8381;</span><span>/кг</span></p>
                         <div class="link-block card-content">
                             <a class="name-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-                        </div><button class="button card-button card-content">Быстрый просмотр</button>
+                        </div><a class="button card-button card-content" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="card main-card">
                         <a class="photo-link card-content" href="#"><img alt="Сливочное крем-брюле с карамельной подливкой" class="photo" height="267" src="img/catalog/jpg/4.jpg" width="267"></a>
                         <p class="main-prise card-content">415<span class="prise-ruble">&#8381;</span><span>/кг</span></p>
                         <div class="link-block card-content">
                             <a class="name-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
-                        </div><button class="button card-button card-content">Быстрый просмотр</button>
+                        </div><a class="button card-button card-content" href="#">Быстрый просмотр</a>
                     </article>
                 </section>
                 <section class="main-features">
@@ -162,7 +167,7 @@
                             <h2 class="visually-hidden">Подписка на рассылку</h2>
                             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
                             <form action="https://echo.htmlacademy.ru" class="mailing-form" method="post">
-                                <label class="visually-hidden" for="email-mailing-field">Электроннная почта</label> <input class="mailng-email" id="email-mailing-field" name="email-mailing" placeholder="Электроннная почта" type="email"> <button class="button button-mailing" type="submit">Отправить</button>
+                                <label class="visually-hidden" for="email-mailing-field">Электроннная почта</label> <input class="input-box mailng-email" id="email-mailing-field" name="email-mailing" placeholder="Электроннная почта" type="email"> <button class="button button-mailing" type="submit">Отправить</button>
                             </form>
                         </div>
                     </section>
@@ -172,12 +177,12 @@
                 <iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/-/CCac5Clt"></iframe>
                 <div class="info">
                     <h2 class="visually-hidden">Адрес магазина и телефон</h2>
-                    <p class="address">Адрес главного офиса<br>
-                    и офлайн-магазина:<br>
-                    <span class="address-span">ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
+                    <p class="address address-1">Адрес главного офиса</p>
+                    <p class="address">и офлайн-магазина:</p>
+                    <p class="address"><span class="address-span">ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
                     <p>Для заказов по телефону:</p>
                     <p><a class="map-telephone" href="tel:+78124502525">8 812 450-25-25</a></p>
-                    <p class="time-p">(с 10 до 20 ежедневно)</p><button class="button map-button" type="button">Форма обратной связи</button>
+                    <p class="time-p">(с 10 до 20 ежедневно)</p><a class="button map-button" href="#">Форма обратной связи</a>
                 </div>
             </section>
             <footer class="main-footer">
@@ -227,10 +232,10 @@
                 <button class="modal-close" type="button">Закрыть</button>
                 <h3>Мы обязательно вам ответим!</h3>
                 <form action="https://echo.htmlacademy.ru" class="feedback-form" method="post">
-                    <p><label class="visually-hidden" for="name-feedback">Ваше имя</label> <input id="name-feedback" name="feedback-name" placeholder="Как вас зовут?" type="text"></p>
-                    <p><label class="visually-hidden" for="email-feedback">Ваш Email для ответа</label> <input id="email-feedback" name="email-feedback" placeholder="Ваша почта для ответа?" type="email"></p>
+                    <p><label class="visually-hidden" for="name-feedback">Ваше имя</label> <input class="input-box" id="name-feedback" name="feedback-name" placeholder="Как вас зовут?" type="text"></p>
+                    <p><label class="visually-hidden" for="email-feedback">Ваш Email для ответа</label> <input class="input-box" id="email-feedback" name="email-feedback" placeholder="Ваша почта для ответа?" type="email"></p>
                     <p><label class="visually-hidden" for="textarea-feedback">Ваше сообщение</label> 
-                    <textarea id="textarea-feedback" name="message" placeholder="Напишите что-нибудь..."></textarea></p><button class="button button-feedback" type="submit">Отправить</button>
+                    <textarea class="input-box" id="textarea-feedback" name="message" placeholder="Напишите что-нибудь..."></textarea></p><button class="button button-feedback" type="submit">Отправить</button>
                 </form>
             </section>
         </div>

@@ -6,7 +6,6 @@ body {
      line-height: 22px;
      font-weight: 400;
      color: #ffffff;
-     background-color: #849d8f;
 }
 a {
      text-decoration: none;
@@ -189,7 +188,7 @@ img {
 }
 a.site-navigation-item:active, a.site-navigation-item:focus {
      background-color: #ededed;
-     -webkit-box-shadow: 0 -1px 4px 0 #696969;
+     -webkit-box-shadow: 0 2px 1px 0 #696969;
      box-shadow: 0 -1px 4px 0 #696969;
      outline: none;
      border-radius: 20px;
@@ -487,11 +486,11 @@ p.work-time {
      border-radius: 15px;
 }
 .main-promo-item:nth-child(2) {
-     background-image: url("../img/discount/raspberries-background.jpg");
+     background: #961e3e url("../img/discount/raspberries-background.jpg");
      background-repeat: no-repeat;
 }
 .main-promo-item:nth-child(3) {
-     background-image: url("../img/discount/chocolate background.jpg");
+     background: #62371d url("../img/discount/chocolate background.jpg");
      background-repeat: no-repeat;
 }
 .main-promo-item h3 {
@@ -634,11 +633,14 @@ p.work-time {
      font-size: 45px;
      line-height: 45px;
      font-weight: 700;
-     ;
 }
 .main-hits .main-prise, .cards-catalog .main-prise {
      top: 164px;
      left: -2px;
+}
+.cards-catalog .main-prise {
+     top: 166px;
+     left: -1px;
 }
 .main-prise span {
      font-size: 30px;
@@ -654,6 +656,14 @@ p.work-time {
      font-weight: 700;
      margin-left: 5px;
 }
+.cards-catalog .prise-ruble {
+     margin: 0;
+     padding: 0;
+     font-size: 45px;
+     line-height: 45px;
+     font-weight: 700;
+     margin-left: 4px;
+}
 .link-block {
      margin-top: 8px;
      font-size: 16px;
@@ -661,6 +671,10 @@ p.work-time {
      font-weight: 500;
      width: 258px;
      padding-left: 6px;
+}
+.cards-catalog .link-block {
+     margin-top: 9px;
+     padding-left: 5px;
 }
 .main-hits .link-block {
      margin-top: 7px;
@@ -837,45 +851,6 @@ p.work-time {
      font-weight: 700;
      color: #fefefe;
 }
-.mailng-email {
-     -webkit-box-sizing: border-box;
-     box-sizing: border-box;
-     width: 366px;
-     margin: 0;
-     padding: 0;
-     padding-left: 13px;
-     margin-right: 7px;
-     color: #323232;
-     font-size: 16px;
-     line-height: 24px;
-     font-weight: 400;
-     -webkit-box-shadow: 0 0 0 1px #d3d3d2;
-     box-shadow: 0 0 0 1px #d3d3d2;
-     border: none;
-     border-radius: 6px;
-     outline: none;
-}
-.mailing input[placeholder] {
-     padding-top: 1px;
-     font-size: 16px;
-     line-height: 24px;
-     color: #999999;
-     font-weight: 400;
-}
-.mailng-email:hover {
-     -webkit-box-shadow: 0 0 0 2px #c7c6c5;
-     box-shadow: 0 0 0 2px #c7c6c5;
-     outline: none;
-     border: none;
-}
-.mailng-email:active, .mailng-email:focus {
-     -webkit-box-shadow: 0 0 0 2px #8fbdec;
-     box-shadow: 0 0 0 2px #8fbdec;
-     font-weight: 700;
-     color: #323232;
-     outline: none;
-     border: none;
-}
 .main-map {
      position: relative;
      height: 429px;
@@ -917,7 +892,9 @@ p.work-time {
 p.address {
      margin: 0;
      padding: 0;
-     margin-bottom: 18px;
+}
+p.address-1 {
+     margin-bottom: 0;
 }
 .main-map span {
      margin-top: 10px;
@@ -930,6 +907,7 @@ span.address-span {
      padding: 0;
      margin-top: 1px;
      line-height: 24px;
+     margin-bottom: 18px;
 }
 a.map-telephone {
      display: block;
@@ -951,7 +929,6 @@ a.map-telephone:hover {
      font-size: 18px;
      line-height: 24px;
      font-weight: 700;
-     color: #fefefe;
      padding-left: 27px;
      padding-right: 27px;
      padding-top: 9px;
@@ -972,7 +949,7 @@ a.map-telephone:hover {
      align-items: flex-end;
      height: 60px;
      margin-top: 18px;
-     margin-bottom: 20px;
+     padding-bottom: 20px;
 }
 .footer-item:not(:last-child) {
      margin-right: 26px;
@@ -1080,6 +1057,9 @@ a.social-button:active path {
      left: -22px;
      top: 6px;
 }
+.provider a {
+     font-weight: 700;
+}
 .footer-html-academy {
      display: -webkit-box;
      display: -ms-flexbox;
@@ -1146,7 +1126,7 @@ a.social-button:active path {
 .breadcrumbs li {
      display: inline;
      position: relative;
-     margin-right: 18px;
+     margin-right: 17px;
 }
 .breadcrumbs li:last-child {
      margin-right: 0;
@@ -1155,7 +1135,7 @@ a.social-button:active path {
      position: absolute;
      content: "»";
      margin-right: 5px;
-     margin-left: 8px;
+     margin-left: 3px;
 }
 .breadcrumbs a {
      color: #ffffff;
@@ -1499,7 +1479,7 @@ a.social-button:active path {
      margin: 0;
      padding: 0;
      margin-top: 45px;
-     margin-bottom: 51px;
+     margin-bottom: 49px;
 }
 .pagination-item {
      margin-right: 4px;
@@ -1561,34 +1541,6 @@ a.social-button:active path {
      -webkit-box-shadow: 0 10px 20px 5px rgba(50, 50, 50, 0.3);
      box-shadow: 0 10px 20px 5px rgba(50, 50, 50, 0.3);
 }
-.site-form input[type="text"], .site-form input[type="email"], .site-form input[type="password"], .modal input[type="text"], .modal input[type="email"], .modal textarea {
-     -webkit-box-sizing: border-box;
-     box-sizing: border-box;
-     outline: none;
-     -webkit-box-shadow: 0 0 0 1px #d3d3d2;
-     box-shadow: 0 0 0 1px #d3d3d2;
-     border: none;
-     border-radius: 5px;
-     font-size: 14px;
-     line-height: 24px;
-}
-.site-form input[type="text"]:hover, .site-form input[type="email"]:hover, .site-form input[type="password"]:hover, .modal input[type="text"]:hover, .modal input[type="email"]:hover, .modal textarea:hover {
-     -webkit-box-shadow: 0 0 0 2px #c7c6c5;
-     box-shadow: 0 0 0 2px #c7c6c5;
-     outline: none;
-     border: none;
-}
-.site-form input[placeholder] {
-     color: #999999;
-}
-.site-form input[type="text"]:active, .site-form input[type="text"]:focus, .site-form input[type="email"]:active, .site-form input[type="password"]:active, .site-form input[type="email"]:focus, .site-form input[type="password"]:focus, .modal input[type="text"]:active, .modal input[type="email"]:active, .modal textarea:active, .modal input[type="text"]:focus, .modal input[type="email"]:focus, .modal textarea:focus {
-     -webkit-box-shadow: 0 0 0 2px #8fbdec;
-     box-shadow: 0 0 0 2px #8fbdec;
-     font-weight: 700;
-     color: #323232;
-     outline: none;
-     border: none;
-}
 .search-form {
      display: none;
      padding-top: 20px;
@@ -1600,13 +1552,6 @@ a.social-button:active path {
 }
 .search-item:hover .search-form {
      display: block;
-}
-.search-form input[type="text"] {
-     width: 310px;
-     padding-top: 10px;
-     padding-bottom: 10px;
-     padding-left: 12px;
-     padding-right: 12px;
 }
 .login-form {
      display: none;
@@ -1620,34 +1565,47 @@ a.social-button:active path {
 .login-item:hover .login-form {
      display: block;
 }
-.login-form input[type="email"], .login-form input[type="password"] {
-     width: 240px;
-     margin-bottom: 20px;
-     padding-top: 10px;
-     padding-bottom: 10px;
-     padding-left: 14px;
-     padding-right: 12px;
-     color: #999999;
-     font-weight: 400;
+.entr-block, .entr-links-block {
+     margin: 0;
+     padding: 0;
+}
+.entr-block {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+     justify-content: space-between;
+     padding-right: 1px;
 }
 .button-entrance {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: start;
+     -ms-flex-pack: start;
+     justify-content: flex-start;
      padding-top: 11px;
      padding-bottom: 10px;
      padding-left: 25px;
      padding-right: 25px;
-     margin-right: 18px;
+     margin-right: 17px;
      font-size: 18px;
      line-height: 24px;
      font-weight: 700;
      color: #fefefe;
-     float: left;
+     border-radius: 20px;
 }
 .login-form-p {
-     float: left;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: start;
+     -ms-flex-pack: start;
+     justify-content: flex-start;
      margin: 0;
      margin-top: -1px;
      margin-bottom: 4px;
-     margin-left: 1px;
      padding: 0;
 }
 a.login-form-link {
@@ -1766,20 +1724,18 @@ td.basket-table-column-img {
      padding-right: 15px;
 }
 .button-X-basket {
-     position: relative;
      background: transparent;
      font-size: 0;
      border: 0;
      cursor: pointer;
      width: 15px;
      height: 15px;
-     vertical-align: middle;
 }
 .button-X-basket:before, .button-X-basket:after {
      content: "";
      position: absolute;
-     top: -2px;
-     left: 4px;
+     top: 7px;
+     left: 5px;
      width: 1px;
      height: 15px;
      background-color: #231f20;
@@ -1940,32 +1896,6 @@ td.basket-table-column-img {
      font-weight: 500;
      color: #323232;
 }
-.modal-feedback input[type="text"], .modal-feedback input[type="email"], .modal-feedback textarea {
-     font-size: 16px;
-     font-weight: 400;
-     color: #999999;
-     padding-top: 9px;
-     padding-bottom: 9px;
-     padding-left: 15px;
-     padding-right: 13px;
-     margin-bottom: -10px;
-}
-.modal-feedback input[type="text"]:active, .modal-feedback input[type="text"]:focus, .modal-feedback input[type="email"]:active, .modal-feedback input[type="email"]:focus, .modal-feedback textarea:active, .modal-feedback textarea:focus {
-     font-weight: 700;
-     color: #323232;
-}
-.modal-feedback input[type="text"] {
-     width: 265px;
-}
-.modal-feedback input[type="email"] {
-     width: 265px;
-}
-.modal-feedback textarea {
-     width: 426px;
-     height: 154px;
-     margin-bottom: 3px;
-     margin-top: -4px;
-}
 .button-feedback {
      -ms-flex-item-align: end;
      align-self: flex-end;
@@ -1992,4 +1922,92 @@ td.basket-table-column-img {
 }
 .overlay-show {
      display: block;
+}
+/*Поля ввода*/
+
+.input-box {
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     color: #323232;
+     font-size: 16px;
+     line-height: 24px;
+     font-weight: 700;
+     -webkit-box-shadow: 0 0 0 1px #d3d3d2;
+     box-shadow: 0 0 0 1px #d3d3d2;
+     border: none;
+     border-radius: 6px;
+     outline: none;
+}
+.input-box[placeholder] {
+     color: #999999;
+     font-size: 16px;
+     line-height: 24px;
+     font-weight: 400;
+}
+.user-menu-input[placeholder] {
+     font-size: 14px;
+     line-height: 24px;
+}
+.input-box:hover {
+     -webkit-box-shadow: 0 0 0 2px #c7c6c5;
+     box-shadow: 0 0 0 2px #c7c6c5;
+     outline: none;
+     border: none;
+}
+.input-box:active, .input-box:focus {
+     -webkit-box-shadow: 0 0 0 2px #8fbdec;
+     box-shadow: 0 0 0 2px #8fbdec;
+     font-weight: 700;
+     color: #323232;
+     outline: none;
+     border: none;
+}
+.mailng-email {
+     width: 366px;
+     padding-left: 13px;
+     margin-right: 7px;
+}
+.mailing input[placeholder] {
+     padding-top: 1px;
+}
+.user-menu-input {
+     border-radius: 5px;
+     font-size: 14px;
+     line-height: 24px;
+}
+.modal input[type="text"], .modal input[type="email"], .modal textarea {
+     border-radius: 5px;
+}
+.search-form input[type="text"] {
+     width: 310px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-left: 12px;
+     padding-right: 12px;
+}
+.login-form input[type="email"], .login-form input[type="password"] {
+     width: 240px;
+     margin-bottom: 20px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-left: 14px;
+     padding-right: 12px;
+}
+.modal-feedback input[type="text"], .modal-feedback input[type="email"], .modal-feedback textarea {
+     padding-top: 9px;
+     padding-bottom: 9px;
+     padding-left: 15px;
+     padding-right: 13px;
+     margin-bottom: -10px;
+}
+.modal-feedback input[type="text"], .modal-feedback input[type="email"] {
+     width: 265px;
+}
+.modal-feedback textarea {
+     width: 426px;
+     height: 154px;
+     margin-bottom: 3px;
+     margin-top: -4px;
 }

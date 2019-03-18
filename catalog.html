@@ -17,9 +17,7 @@
                         <li class="menu-button current">
                             <a class="site-navigation-item current-menu-item" href="#"><span>Каталог</span></a>
                             <ul class="main-catalog-submenu">
-                                <li>
-                                    <a class="submenu-item" href="#"><span>Новинки</span></a>
-                                </li>
+                                <li class="submenu-item"><span>Новинки</span></li>
                                 <li>
                                     <a class="submenu-item current" href="catalog.html">Сливочное</a>
                                 </li>
@@ -49,7 +47,7 @@
                             <path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z" fill="#fff"></path></svg></a>
                             <div class="site-form search-form">
                                 <form action="https://echo.htmlacademy.ru" method="get">
-                                    <label class="visually-hidden" for="search-field">Поиск по сайту</label> <input id="search-field" name="site-search" placeholder="Что ищем?" type="text">
+                                    <label class="visually-hidden" for="search-field">Поиск по сайту</label> <input class="input-box user-menu-input" id="search-field" name="site-search" placeholder="Что ищем?" type="text">
                                 </form>
                             </div>
                         </li>
@@ -60,9 +58,12 @@
                                 <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"></path>
                             </g></svg> <span>Вход</span></a>
                             <form action="https://echo.htmlacademy.ru" class="site-form login-form" method="post">
-                                <label class="visually-hidden" for="email-field">Email</label> <input id="email-field" name="email" placeholder="Электронная почта" type="email"> <label class="visually-hidden" for="password-field">Пароль</label> <input id="password-field" name="password" placeholder="Пароль" type="password"> <button class="button button-entrance" type="submit">Войти</button>
-                                <p class="login-form-p"><a class="login-form-link" href="#"><span>Забыли пароль?</span></a></p>
-                                <p class="login-form-p"><a class="login-form-link" href="#"><span>Новая регистрация</span></a></p>
+                                <label class="visually-hidden" for="email-field">Email</label> <input class="input-box user-menu-input" id="email-field" name="email" placeholder="Электронная почта" type="email"> <label class="visually-hidden" for="password-field">Пароль</label> <input class="input-box user-menu-input" id="password-field" name="password" placeholder="Пароль" type="password"> 
+                                <div class="entr-block">
+                                    <button class="button button-entrance" type="submit">Войти</button>
+                                    <div class="entr-links-block"><p class="login-form-p"><a class="login-form-link" href="#"><span>Забыли пароль?</span></a></p>
+                                    <p class="login-form-p"><a class="login-form-link" href="#"><span>Новая регистрация</span></a></p></div>
+                                </div>
                             </form>
                         </li>
                         <li class="user-navigation-item basket-item">
@@ -151,8 +152,8 @@
                                     <div class="scale">
                                         <div class="bar"></div>
                                     </div>
-                                    <div class="range-toggle range-toggle-min"></div>
-                                    <div class="range-toggle range-toggle-max"></div>
+                                    <div class="range-toggle range-toggle-min"><p class="visually-hidden">Минимальная цена</p></div>
+                                    <div class="range-toggle range-toggle-max"><p class="visually-hidden">Максимальная цена</p></div>
                                 </div>
                             </div>
                         </fieldset>
@@ -187,84 +188,84 @@
                         <p class="main-prise card-content">310<span class="prise-ruble">&#8381;</span><span>/кг</span></p>
                         <div class="link-block card-content">
                             <a class="name-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-                        </div><button class="button card-button card-content">Быстрый просмотр</button>
+                        </div><a class="button card-button card-content" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="card">
                         <a class="photo-link card-content" href="#"><img alt="Сливочно-кофейное с кусочками шоколада" class="photo" height="267" src="img/catalog/jpg/2.jpg" width="267"></a>
                         <p class="main-prise card-content">380<span class="prise-ruble">&#8381;</span><span>/кг</span></p>
                         <div class="link-block card-content">
                             <a class="name-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
-                        </div><button class="button card-button card-content">Быстрый просмотр</button>
+                        </div><a class="button card-button card-content" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="card">
                         <a class="photo-link card-content" href="#"><img alt="Сливочно-клубничное с присыпкой из белого шоколада" class="photo" height="267" src="img/catalog/jpg/3.jpg" width="267"></a>
                         <p class="main-prise card-content">355<span class="prise-ruble">&#8381;</span><span>/кг</span></p>
                         <div class="link-block card-content">
                             <a class="name-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-                        </div><button class="button card-button card-content">Быстрый просмотр</button>
+                        </div><a class="button card-button card-content" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="card">
                         <a class="photo-link card-content" href="#"><img alt="Сливочное крем-брюле с карамельной подливкой" class="photo" height="267" src="img/catalog/jpg/4.jpg" width="267"></a>
                         <p class="main-prise card-content">415<span class="prise-ruble">&#8381;</span><span>/кг</span></p>
                         <div class="link-block card-content">
                             <a class="name-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
-                        </div><button class="button card-button card-content">Быстрый просмотр</button>
+                        </div><a class="button card-button card-content" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="card">
                         <a class="photo-link card-content" href="#"><img alt="Сливочное с брусничным джемом" class="photo" height="267" src="img/catalog/jpg/5.jpg" width="267"></a>
                         <p class="main-prise card-content">325<span class="prise-ruble">&#8381;</span><span>/кг</span></p>
                         <div class="link-block card-content">
                             <a class="name-link" href="#">Сливочное с брусничным джемом</a>
-                        </div><button class="button card-button card-content">Быстрый просмотр</button>
+                        </div><a class="button card-button card-content" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="card">
                         <a class="photo-link card-content" href="#"><img alt="Сливочно-черничное с цельными ягодами черники" class="photo" height="267" src="img/catalog/jpg/6.jpg" width="267"></a>
                         <p class="main-prise card-content">410<span class="prise-ruble">&#8381;</span><span>/кг</span></p>
                         <div class="link-block card-content">
                             <a class="name-link" href="#">Сливочно-черничное с цельными ягодами черники</a>
-                        </div><button class="button card-button card-content">Быстрый просмотр</button>
+                        </div><a class="button card-button card-content" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="card">
                         <a class="photo-link card-content" href="#"><img alt="Сливочно-лимонное с карамельной присыпкой" class="photo" height="267" src="img/catalog/jpg/7.jpg" width="267"></a>
                         <p class="main-prise card-content">375<span class="prise-ruble">&#8381;</span><span>/кг</span></p>
                         <div class="link-block card-content">
                             <a class="name-link" href="#">Сливочно-лимонное с карамельной присыпкой</a>
-                        </div><button class="button card-button card-content">Быстрый просмотр</button>
+                        </div><a class="button card-button card-content" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="card">
                         <a class="photo-link card-content" href="#"><img alt="Сливочное с шоколадной стружкой" class="photo" height="267" src="img/catalog/jpg/8.jpg" width="267"></a>
                         <p class="main-prise card-content">320<span class="prise-ruble">&#8381;</span><span>/кг</span></p>
                         <div class="link-block card-content">
                             <a class="name-link" href="#">Сливочное с шоколадной стружкой</a>
-                        </div><button class="button card-button card-content">Быстрый просмотр</button>
+                        </div><a class="button card-button card-content" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="card">
                         <a class="photo-link card-content" href="#"><img alt="Сливочно-ванильное с кусочками шоколада" class="photo" height="267" src="img/catalog/jpg/9.jpg" width="267"></a>
                         <p class="main-prise card-content">440<span class="prise-ruble">&#8381;</span><span>/кг</span></p>
                         <div class="link-block card-content">
                             <a class="name-link" href="#">Сливочно-ванильное с кусочками шоколада</a>
-                        </div><button class="button card-button card-content">Быстрый просмотр</button>
+                        </div><a class="button card-button card-content" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="card">
                         <a class="photo-link card-content" href="#"><img alt="Сливочноe с ментоловым сиропом" class="photo" height="267" src="img/catalog/jpg/10.jpg" width="267"></a>
                         <p class="main-prise card-content">435<span class="prise-ruble">&#8381;</span><span>/кг</span></p>
                         <div class="link-block card-content">
                             <a class="name-link" href="#">Сливочноe с ментоловым сиропом</a>
-                        </div><button class="button card-button card-content">Быстрый просмотр</button>
+                        </div><a class="button card-button card-content" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="card">
                         <a class="photo-link card-content" href="#"><img alt="Сливочное с кусочками черного шоколада" class="photo" height="267" src="img/catalog/jpg/11.jpg" width="267"></a>
                         <p class="main-prise card-content">355<span class="prise-ruble">&#8381;</span><span>/кг</span></p>
                         <div class="link-block card-content">
                             <a class="name-link" href="#">Сливочное с кусочками черного шоколада</a>
-                        </div><button class="button card-button card-content">Быстрый просмотр</button>
+                        </div><a class="button card-button card-content" href="#">Быстрый просмотр</a>
                     </article>
                     <article class="card">
                         <a class="photo-link card-content" href="#"><img alt="Сливочное с мятным сиропом" class="photo" height="267" src="img/catalog/jpg/12.jpg" width="267"></a>
                         <p class="main-prise card-content">420<span class="prise-ruble">&#8381;</span><span>/кг</span></p>
                         <div class="link-block card-content">
                             <a class="name-link" href="#">Сливочное с мятным сиропом</a>
-                        </div><button class="button card-button card-content">Быстрый просмотр</button>
+                        </div><a class="button card-button card-content" href="#">Быстрый просмотр</a>
                     </article>
                 </section>
             </main>
