@@ -929,6 +929,7 @@ a.map-telephone:hover {
      font-size: 18px;
      line-height: 24px;
      font-weight: 700;
+     color: #fefefe;
      padding-left: 27px;
      padding-right: 27px;
      padding-top: 9px;
@@ -966,7 +967,7 @@ a.map-telephone:hover {
      border-bottom: 1px solid #ffbc9e;
 }
 .footer-social {
-     width: 265px;
+     width: 196px;
      margin-bottom: 5px;
      padding-left: 2px;
 }
@@ -1026,7 +1027,7 @@ a.social-button:active path {
      box-sizing: border-box;
      width: 560px;
      padding-bottom: 4px;
-     padding-left: 3px;
+     
 }
 .footer-menu .left-col, .footer-menu .right-col {
      display: -webkit-box;
@@ -1040,7 +1041,7 @@ a.social-button:active path {
      flex-wrap: wrap;
 }
 .footer-menu .left-col {
-     margin-right: 33px;
+     margin-right: 25px;
 }
 .footer-menu p {
      position: relative;
@@ -1075,7 +1076,7 @@ a.social-button:active path {
      justify-content: flex-end;
      -ms-flex-line-pack: end;
      align-content: flex-end;
-     width: 267px;
+     width: 190px;
      margin: 0;
      padding: 0;
 }
@@ -1924,7 +1925,16 @@ td.basket-table-column-img {
      display: block;
 }
 /*Поля ввода*/
-
+.input-box[placeholder] {
+     color: #999999;
+     font-size: 16px;
+     line-height: 24px;
+     font-weight: 400;
+}
+.user-menu-input[placeholder] {
+     font-size: 14px;
+     line-height: 24px;
+}
 .input-box {
      -webkit-box-sizing: border-box;
      box-sizing: border-box;
@@ -1939,16 +1949,6 @@ td.basket-table-column-img {
      border: none;
      border-radius: 6px;
      outline: none;
-}
-.input-box[placeholder] {
-     color: #999999;
-     font-size: 16px;
-     line-height: 24px;
-     font-weight: 400;
-}
-.user-menu-input[placeholder] {
-     font-size: 14px;
-     line-height: 24px;
 }
 .input-box:hover {
      -webkit-box-shadow: 0 0 0 2px #c7c6c5;
@@ -1966,6 +1966,10 @@ td.basket-table-column-img {
 }
 .mailng-email {
      width: 366px;
+      color: #323232;
+     font-size: 16px;
+     line-height: 24px;
+     font-weight: 700;
      padding-left: 13px;
      margin-right: 7px;
 }
