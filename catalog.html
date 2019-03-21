@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Каталог: сливочное</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
@@ -58,11 +58,13 @@
                                 <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"></path>
                             </g></svg> <span>Вход</span></a>
                             <form action="https://echo.htmlacademy.ru" class="site-form login-form" method="post">
-                                <label class="visually-hidden" for="email-field">Email</label> <input class="input-box user-menu-input" id="email-field" name="email" placeholder="Электронная почта" type="email"> <label class="visually-hidden" for="password-field">Пароль</label> <input class="input-box user-menu-input" id="password-field" name="password" placeholder="Пароль" type="password"> 
+                                <label class="visually-hidden" for="email-field">Email</label> <input class="input-box user-menu-input" id="email-field" name="email" placeholder="Электронная почта" type="email"> <label class="visually-hidden" for="password-field">Пароль</label> <input class="input-box user-menu-input" id="password-field" name="password" placeholder="Пароль" type="password">
                                 <div class="entr-block">
                                     <button class="button button-entrance" type="submit">Войти</button>
-                                    <div class="entr-links-block"><p class="login-form-p"><a class="login-form-link" href="#"><span>Забыли пароль?</span></a></p>
-                                    <p class="login-form-p"><a class="login-form-link" href="#"><span>Новая регистрация</span></a></p></div>
+                                    <div class="entr-links-block">
+                                        <p class="login-form-p"><a class="login-form-link" href="#"><span>Забыли пароль?</span></a></p>
+                                        <p class="login-form-p"><a class="login-form-link" href="#"><span>Новая регистрация</span></a></p>
+                                    </div>
                                 </div>
                             </form>
                         </li>
@@ -152,8 +154,12 @@
                                     <div class="scale">
                                         <div class="bar"></div>
                                     </div>
-                                    <div class="range-toggle range-toggle-min"><p class="visually-hidden">Минимальная цена</p></div>
-                                    <div class="range-toggle range-toggle-max"><p class="visually-hidden">Максимальная цена</p></div>
+                                    <div class="range-toggle range-toggle-min">
+                                        <p class="visually-hidden">Минимальная цена</p>
+                                    </div>
+                                    <div class="range-toggle range-toggle-max">
+                                        <p class="visually-hidden">Максимальная цена</p>
+                                    </div>
                                 </div>
                             </div>
                         </fieldset>

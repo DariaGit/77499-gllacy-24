@@ -42,7 +42,6 @@ img {
      -webkit-transition: background-image 0.5s ease, background-color 0.5s ease;
      -o-transition: background-image 0.5s ease, background-color 0.5s ease;
      transition: background-image 0.5s ease, background-color 0.5s ease;
-
 }
 .container {
      width: 1146px;
@@ -463,8 +462,8 @@ p.work-time {
      -ms-flex-pack: justify;
      justify-content: space-between;
      -webkit-box-align: start;
-         -ms-flex-align: start;
-             align-items: flex-start;
+     -ms-flex-align: start;
+     align-items: flex-start;
      margin-top: 41px;
 }
 .main-promo-item {
@@ -488,15 +487,14 @@ p.work-time {
      font-weight: 700;
      background-position: center center;
      border-radius: 15px;
-    -webkit-box-sizing: border-box; box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
 }
 .raspberry-free {
      background: #961e3e url("../img/discount/raspberries-background.jpg") repeat-y;
-     
 }
 .chocolates-free {
      background: #62371d url("../img/discount/chocolate background.jpg") repeat-y;
-     
 }
 .main-promo-item h3 {
      padding: 0;
@@ -1004,7 +1002,6 @@ a.map-telephone:hover {
 a.social-button {
      border-bottom: none;
      border: 2px solid rgba(255, 255, 255, 0.5);
-    
 }
 a.social-button path {
      fill: rgba(255, 255, 255, 0.8);
@@ -1012,7 +1009,6 @@ a.social-button path {
 a.social-button:hover, a.social-button:active {
      border-bottom: none;
      border: 2px solid rgba(255, 255, 255, 0.5);
-     
 }
 a.social-button:hover path {
      fill: #ffffff;
@@ -1932,54 +1928,50 @@ td.basket-table-column-img {
      display: block;
 }
 /*Поля ввода*/
-.input-box::-webkit-input-placeholder { 
-     color: #999999;
-     font-size: 16px;
-     font-weight: 400;
-}
-.input-box::-moz-placeholder { 
-   color: #999999;
-     font-size: 16px;
-     font-weight: 400;
-}
-.input-box:-ms-input-placeholder { 
-     color: #999999;
-     font-size: 16px;
-     font-weight: 400;
-}
-.input-box:-moz-placeholder { 
-    color: #999999;
-     font-size: 16px;
-     font-weight: 400;
-}
-.user-menu-input::-webkit-input-placeholder { 
-     font-size: 14px;
-     
-}
-.user-menu-input::-moz-placeholder { 
-    font-size: 14px;
-     
-}
-.user-menu-input:-ms-input-placeholder { 
-     font-size: 14px;
-     
-}
-.user-menu-input:-moz-placeholder { 
-      font-size: 14px;
-    
-}
 
-.mailing .mailng-email::-webkit-input-placeholder { 
-    padding-top: 1px;
+.input-box::-webkit-input-placeholder {
+     color: #999999;
+     font-size: 16px;
+     font-weight: 400;
 }
-.mailing .mailng-email::-moz-placeholder { 
-  padding-top: 1px;
+.input-box::-moz-placeholder {
+     color: #999999;
+     font-size: 16px;
+     font-weight: 400;
 }
-.mailing .mailng-email:-ms-input-placeholder { 
-  padding-top: 1px;
+.input-box:-ms-input-placeholder {
+     color: #999999;
+     font-size: 16px;
+     font-weight: 400;
 }
-.mailing .mailng-email:-moz-placeholder { 
-    padding-top: 1px;
+.input-box:-moz-placeholder {
+     color: #999999;
+     font-size: 16px;
+     font-weight: 400;
+}
+.user-menu-input::-webkit-input-placeholder {
+     font-size: 14px;
+}
+.user-menu-input::-moz-placeholder {
+     font-size: 14px;
+}
+.user-menu-input:-ms-input-placeholder {
+     font-size: 14px;
+}
+.user-menu-input:-moz-placeholder {
+     font-size: 14px;
+}
+.mailing .mailng-email::-webkit-input-placeholder {
+     padding-top: 1px;
+}
+.mailing .mailng-email::-moz-placeholder {
+     padding-top: 1px;
+}
+.mailing .mailng-email:-ms-input-placeholder {
+     padding-top: 1px;
+}
+.mailing .mailng-email:-moz-placeholder {
+     padding-top: 1px;
 }
 .input-box {
      -webkit-box-sizing: border-box;
@@ -2019,22 +2011,22 @@ td.basket-table-column-img {
      padding-left: 13px;
      margin-right: 7px;
 }
-
 .user-menu-input {
      border-radius: 5px;
      font-size: 14px;
+     height: 42px;
 }
-.modal .modal-input{
+.modal .modal-input {
      border-radius: 5px;
 }
-.search-form .user-menu-input{
+.search-form .user-menu-input {
      width: 310px;
      padding-top: 10px;
      padding-bottom: 10px;
      padding-left: 12px;
      padding-right: 12px;
 }
-.login-form .user-menu-input{
+.login-form .user-menu-input {
      width: 240px;
      margin-bottom: 20px;
      padding-top: 10px;
@@ -2042,20 +2034,16 @@ td.basket-table-column-img {
      padding-left: 14px;
      padding-right: 12px;
 }
-.modal-feedback .modal-input{
-     padding-top: 9px;
+.modal-feedback .modal-input {
+     padding-top: 8px;
      padding-bottom: 9px;
      padding-left: 14px;
      padding-right: 13px;
      margin-bottom: -10px;
      width: 265px;
      line-height: 24px;
+     height: 42px;
 }
-
-.modal-feedback .input-box:-ms-input{
-     line-height: 0;
-}
-
 .modal-feedback textarea.modal-input {
      width: 426px;
      height: 154px;
